@@ -26,7 +26,6 @@ function App() {
     };
   }, []);
 
-  // Effect to handle window resize and update the 'isMobile' state
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth < 768);
@@ -48,22 +47,18 @@ function App() {
         >
           <div
             id="header"
-            className="w-full max-w-[1600px] px-4 flex items-center justify-between pl-8 pr-8"
+            className="w-full max-w-[1600px] px-4 flex items-center justify-between pl-4 pr-8 "
           >
-            {/* Logo */}
-            <div className="text-white text-xl font-bold">Logo</div>
+            <div className="text-white  flex justify-end text-2xl mt-3 font-bold ml-2">Shade<span className="text-pink-500 hover:text-blue-500 transition-colors  duration-300 cursor-pointer">Seek</span></div>
 
-            {/* Conditional rendering for Nav or Loader */}
             {isMobile ? <Loader /> : <Nav />}
 
-            {/* Explore button */}
             <div className="hidden md:block">
               <Explore />
             </div>
           </div>
         </div>
 
-        {/* Remaining sections */}
         <div className="h-[100vh] w-full bg-blue-950 pt-4 flex justify-center"></div>
         <div className="h-[100vh] w-full bg-black pt-4 flex justify-center"></div>
         <div className="h-[100vh] w-full bg-blue-950 pt-4 flex justify-center"></div>

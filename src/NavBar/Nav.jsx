@@ -14,7 +14,7 @@ export function Nav() {
     <>
       <div className="relative pb-[3px] w-full max-w-[60%] md:max-w-[800px] h-[60px] md:h-[80px] rounded-bl-[24px] rounded-br-[24px] overflow-hidden isolate animated-border flex-shrink">
         <div className="relative z-[1] h-full w-full bg-black rounded-bl-[24px] rounded-br-[24px] flex items-center justify-center">
-          <ul className="flex flex-wrap items-center justify-center gap-6 sm:gap-8 md:gap-20 text-white">
+          <ul className="flex cursor-pointer flex-wrap items-center justify-center gap-6 sm:gap-8 md:gap-20 text-white">
             <li
               className="flex items-center gap-2 px-1 sm:px-2 text-white/80 transition-transform hover:scale-125 hover:text-[#ceb1ec]"
               data-tooltip-id="my-tooltip"
