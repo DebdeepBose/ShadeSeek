@@ -1,28 +1,26 @@
 import "./LoginButton.css";
-import "./FloatingLabel.css"; // new css for floating labels
+import "./FloatingLabel.css";
 
 const LoginForm = () => {
   return (
-    <section className="w-screen h-screen flex items-center justify-center bg-gray-900">
+    <section className="w-screen h-screen flex items-center justify-center bg-slate-800">
       <div className="relative w-[400px] p-10 bg-black/90 rounded-lg shadow-[0_15px_25px_rgba(0,0,0,0.6)]">
         <p className="login-gradient mb-8 text-center text-xl font-bold tracking-wide">
           Login
         </p>
 
         <form>
-          {/* Email */}
+         
           <div className="user-box">
             <input type="text" required />
             <label>Email</label>
           </div>
 
-          {/* Password */}
           <div className="user-box">
             <input type="password" required />
             <label>Password</label>
           </div>
 
-          {/* Animated button */}
           <a
             href="#"
             className="relative inline-block px-5 py-2 font-bold text-white text-[16px] uppercase tracking-[3px] overflow-hidden transition-all duration-500 hover:bg-white hover:text-[#272727] hover:rounded-md"

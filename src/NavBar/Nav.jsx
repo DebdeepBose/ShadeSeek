@@ -12,7 +12,7 @@ import "react-tooltip/dist/react-tooltip.css";
 export function Nav() {
   return (
     <>
-      <div className="relative pb-[3px] w-full max-w-[60%] md:max-w-[800px] h-[60px] md:h-[80px] rounded-bl-[24px] rounded-br-[24px] overflow-hidden isolate animated-border flex-shrink">
+      <div className="sticky top-0 z-40 bg-black pb-[3px] w-full max-w-[60%] md:max-w-[800px] h-[60px] md:h-[80px] rounded-bl-[24px] rounded-br-[24px] overflow-hidden isolate animated-border flex-shrink">
         <div className="relative z-[1] h-full w-full bg-black rounded-bl-[24px] rounded-br-[24px] flex items-center justify-center">
           <ul className="flex cursor-pointer flex-wrap items-center justify-center gap-6 sm:gap-8 md:gap-20 text-white">
             <li
