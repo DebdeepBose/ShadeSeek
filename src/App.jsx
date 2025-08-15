@@ -14,7 +14,7 @@ function App() {
   const section2Ref = useRef();
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
   const smootherRef = useRef(null);
-  
+
   // State to control the mobile panel's visibility
   const [isPanelOpen, setIsPanelOpen] = useState(false);
 
@@ -65,16 +65,16 @@ function App() {
         >
           <div
             id="header"
-            className="w-full  max-w-[1600px] px-4 flex items-center justify-between pl-4 pr-8 "
+            className="w-full max-w-[1600px] px-4 flex items-center justify-between pl-4 pr-8 z-[50]"
           >
-            <div className="text-white  flex justify-end text-2xl mt-3 font-bold ml-2">
+            <div className="text-white flex justify-end text-2xl mt-3 font-bold ml-2">
               <span>Shade</span>
-              <span className="text-pink-500 hover:text-blue-500 transition-colors  duration-300 cursor-pointer">
+              <span className="text-pink-500 hover:text-blue-500 transition-colors duration-300 cursor-pointer">
                 Seek
               </span>
             </div>
 
-            {/* Pass state and click handler to Loader component */}
+            {/* The Loader is now only in the header and has a high z-index */}
             {isMobile ? (
               <Loader isOpen={isPanelOpen} onClick={handleBurgerClick} />
             ) : (
@@ -89,47 +89,39 @@ function App() {
 
         {/* The sliding mobile panel */}
         <div
-          className={`fixed top-8 right-0 h-[500px] w-1/3 bg-gray-900 z-50 transform transition-transform duration-500
+          className={`fixed top-0 right-0 h-[500px] w-[200px] bg-gray-900 z-[49] transform transition-transform duration-500
           ${isPanelOpen ? "translate-x-0" : "translate-x-full"}`}
         >
-          {/* Close button for the panel */}
-          <button
-            onClick={handleBurgerClick}
-            className="absolute top-4 right-6 text-white text-3xl"
-          >
-            &times;
-          </button>
-
           {/* Panel content (your nav links) */}
-          <div className="flex flex-col items-center rounded-lg justify-center h-full space-y-8 text-white text-2xl font-bold">
+          <div className="flex flex-col items-center rounded-lg mt-6 justify-center h-full space-y-8 text-white text-2xl font-bold">
             <div className="w-[200px] h-[400px] rounded-lg flex flex-col gap-6 items-center ">
-              <a 
-                className="group w-[150px] text-center py-2 rounded-lg transition-colors duration-300 text-blue-600 hover:text-white hover:bg-blue-600"
-                href="#about" 
+              <a
+                className="group mt-4 w-[150px] text-center py-2 rounded-lg transition-colors duration-300 text-blue-600 hover:text-white hover:bg-blue-600"
+                href="#about"
                 onClick={handleBurgerClick}>
                 Home
               </a>
-              <a 
+              <a
                 className="group w-[150px] text-center py-2 rounded-lg transition-colors duration-300 text-pink-400 hover:text-gray-900 hover:bg-pink-400"
-                href="#services" 
+                href="#services"
                 onClick={handleBurgerClick}>
                 About
               </a>
-              <a 
+              <a
                 className="group w-[150px] text-center py-2 rounded-lg transition-colors duration-300 text-yellow-400 hover:text-gray-900 hover:bg-yellow-400"
-                href="#contact" 
+                href="#contact"
                 onClick={handleBurgerClick}>
                 Blogs
               </a>
-              <a 
+              <a
                 className="group w-[150px] text-center py-2 rounded-lg transition-colors duration-300 text-pink-400 hover:text-gray-900 hover:bg-pink-400"
-                href="#services" 
+                href="#services"
                 onClick={handleBurgerClick}>
                 Services
               </a>
-              <a 
+              <a
                 className="group w-[150px] text-center py-2 rounded-lg transition-colors duration-300 text-blue-600 hover:text-white hover:bg-blue-600"
-                href="#contact" 
+                href="#contact"
                 onClick={handleBurgerClick}>
                 Contact
               </a>
