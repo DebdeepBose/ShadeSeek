@@ -1,0 +1,55 @@
+.explore-button {
+  background-color: black !important; 
+  position: relative;
+  border-radius: 9999px;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  color: black;
+  transition: background-color 0.3s ease, color 0.3s ease;
+   transition: transform 0.25s ease-in-out, color 0.3s ease;
+}
+
+.explore-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 800%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    #ceb1ec,
+    #12bcfe,
+    #ff8ad4,
+    #b2e2f2,
+    #f5d2fb
+  );
+  background-size: 25% 100%;
+  animation: border-slide 1.75s linear infinite;
+  animation-play-state:running;
+  translate: -5% 0%;
+  transition: translate 0.25s ease-out;
+  z-index: 0;
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.explore-button:hover {
+  transform: scale(1.1);
+  color: black;
+}
+.explore-button:active{
+  transform: scale(0.90);
+}
+
+@keyframes border-slide {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
