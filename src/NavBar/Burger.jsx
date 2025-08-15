@@ -7,7 +7,7 @@ export const Loader = () => {
   return (
     <div
       onClick={() => setOpen(!open)}
-      className="flex items-center mt-2 rotate-90 cursor-pointer relative w-[30px] h-[30px]"
+      className="flex items-center mt-6 rotate-90 cursor-pointer relative w-[30px] h-[30px]"
     >
 
       <span
