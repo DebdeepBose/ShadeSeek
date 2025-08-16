@@ -9,7 +9,7 @@ export const Sec3Card = ({ icon: Icon, title, description, link }) => {
       border border-white/10 backdrop-blur-md
       hover:from-blue-600/30 hover:to-pink-600/30 
       hover:shadow-[0px_8px_40px_rgba(0,0,0,0.25)]
-      transition-all duration-300 group pt-12"
+      transition-all duration-300 group pt-12 hover:-translate-y-4"
     >
    
       <motion.div
