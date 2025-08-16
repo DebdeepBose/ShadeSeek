@@ -22,7 +22,7 @@ export const Section2 = ({
       <div className="absolute inset-0 bg-gray-800/50 z-[2]"></div>
 
       <div className="relative z-10 flex flex-col justify-center items-center h-full px-6 md:px-12 text-white">
-        <h1 className="text-3xl md:text-6xl font-bold leading-tight mb-6">
+        <h1 className="text-3xl md:text-6xl font-bold leading-tight mb-6 text-center">
           Find What <span className="text-sky-500 brightness-110">Suits</span> You The Most
         </h1>
 
