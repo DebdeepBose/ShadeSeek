@@ -5,6 +5,7 @@ import { ScrollSmoother } from "gsap/ScrollSmoother";
 import "./CSSMAIN/index.css";
 import { Header } from "./NavBar/Header";
 import { SidePanel } from "./NavBar/SidePanel";
+import { Hero } from "./Section1/Hero";
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
@@ -14,6 +15,14 @@ function App() {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
   const smootherRef = useRef(null);
   const [isPanelOpen, setIsPanelOpen] = useState(false);
+
+  const [activeTab, setActiveTab] = useState("Rent");
+  const [selectedOption, setSelectedOption] = useState("");
+  const dropdownOptions = {
+    Rent: ["Studio", "Apartments", "Houses", "Luxury Homes", "Office Spaces"],
+    Buy: ["Status", "Property", "Active", "Sold"],
+    Foreclosure: ["Categories", "Apartments", "Houses", "Luxury Homes"],
+  };
 
   useLayoutEffect(() => {
     smootherRef.current = ScrollSmoother.create({
@@ -65,10 +74,10 @@ function App() {
           id="section-1"
           className="relative mt-[-80px] h-[100vh] w-full flex flex-col items-center justify-start bg-black overflow-hidden"
         >
-          <div className="h-[85%] w-full flex justify-center items-center mt-6 overflow-hidden before:content-[''] before:absolute before:inset-0 before:bg-gray-800/50 before:z-0"></div>
+          <Hero />
         </div>
-        <SidePanel isPanelOpen={isPanelOpen} onLinkClick={handleBurgerClick} />
 
+        <SidePanel isPanelOpen={isPanelOpen} onLinkClick={handleBurgerClick} />
         <div
           ref={section2Ref}
           className="relative h-[100vh] w-full bg-blue-950 flex justify-center items-center overflow-hidden"
@@ -82,16 +91,47 @@ function App() {
           >
             <source src="sec1.mp4" type="video/mp4" />
           </video>
-
-          {/* This is the new greyish overlay */}
           <div className="absolute inset-0 bg-gray-800/50 z-[2]"></div>
-
-          {/* Content for this section should have a higher z-index to be visible on top of the overlay */}
-          <h1 className="text-white text-5xl font-bold z-[3]">
-            Find Your Dream House 
-          </h1>
+          <div className="relative z-10 flex flex-col justify-center items-center h-full px-6 md:px-12 text-white ">
+            <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-4">
+              Find Your Dream Home
+            </h1>
+            <p>Explore top properties</p>
+            <div className="bg-[#15052da1] p-5 rounded-lg max-w-4xl w-full mx-auto">
+              <div className="flex space-x-6 text-white font-semibold text-sm mb-4 border-b border-white/20">
+                {["Rent", "Buy", "Foreclosure"].map((tab) => (
+                  <button
+                    key={tab}
+                    onClick={() => {
+                      setActiveTab(tab);
+                      setSelectedOption(dropdownOptions[tab][0]);
+                    }}
+                    className={`uppercase pb-2 border-b-2 transition ${
+                      activeTab === tab
+                        ? `border-white text-white `
+                        : "border-transparent text-white/70 hover:text-white"
+                    }`}
+                  >
+                    {tab}
+                  </button>
+                ))}
+              </div>
+              <div className="flex flex-col md:flex-row bg-white rounded overflow-hidden">
+                <select
+                  value={selectedOption}
+                  onChange={(e) => setSelectedOption(e.target.value)}
+                  className="p-[15px] text-[#5c727d] border-r outline-none text-lg cursor-pointer appearance-none"
+                >
+                  {dropdownOptions[activeTab].map((option, idx) => (
+                    <option key={idx} value={option}>
+                      {option}
+                    </option>
+                  ))}
+                </select>
+              </div>
+            </div>
+          </div>
         </div>
-
         <div className="h-[100vh] w-full bg-black pt-4 flex justify-center"></div>
         <div className="h-[100vh] w-full bg-blue-950 pt-4 flex justify-center"></div>
         <div className="h-[100vh] w-full bg-black pt-4 flex justify-center"></div>

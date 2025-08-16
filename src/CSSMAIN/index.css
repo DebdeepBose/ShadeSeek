@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 html, body {
   height: 100%;
   margin: 0;
@@ -23,7 +24,7 @@ html, body {
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
-    font-family: 'Roboto' , sans-serif;
+    font-family: "Inter", sans-serif;
 }
 .delay-1 {
   animation-delay: 0.25s;

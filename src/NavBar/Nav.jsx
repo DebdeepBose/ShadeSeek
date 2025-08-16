@@ -53,7 +53,7 @@ export function Nav() {
           </ul>
         </div>
       </div>
-      <Tooltip id="my-tooltip" place="bottom" effect="solid" />
+      <Tooltip id="my-tooltip" place="bottom" effect="solid" className="z-[999]" />
     </>
   );
 }
