@@ -1,6 +1,6 @@
 export const SearchTabs = ({ activeTab, setActiveTab, setSelectedOption, DropdownOptions }) => {
   return (
-    <div className="flex space-x-6 text-white font-semibold text-sm mb-4 border-b border-white/20">
+    <div className="flex flex-row sm:flex-row sm:space-x-6 text-white font-semibold text-sm sm:text-base mb-4 border-b border-white/20">
       {["Rent", "Buy", "Foreclosure"].map((tab) => (
         <button
           key={tab}
@@ -8,7 +8,7 @@ export const SearchTabs = ({ activeTab, setActiveTab, setSelectedOption, Dropdow
             setActiveTab(tab);
             setSelectedOption(DropdownOptions[tab][0]);
           }}
-          className={`uppercase pb-2 border-b-2 transition ${
+          className={`uppercase pb-2 sm:pb-3 border-b-2 transition text-center w-full sm:w-auto ${
             activeTab === tab
               ? `border-white text-white`
               : "border-transparent text-white/70 hover:text-white"
