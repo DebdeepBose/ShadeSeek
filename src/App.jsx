@@ -8,6 +8,7 @@ import { SidePanel } from "./NavBar/SidePanel";
 import { Hero } from "./Section1/Hero";
 import { DropdownOptions } from "./Section2/dropDownArr"; 
 import { Section2 } from "./Section2/MainSection2File";
+import { Section3Main } from "./Section3/Section3Main";
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
@@ -57,7 +58,6 @@ function App() {
     setIsPanelOpen(!isPanelOpen);
   };
 
-  // Optional: A function to handle the search logic
   const handleSearch = () => {
     console.log(
       `Searching for: ${searchValue} in ${selectedOption} (${activeTab})`
@@ -95,7 +95,11 @@ function App() {
           DropdownOptions={DropdownOptions}
         />
 
-        <div className="h-[100vh] w-full bg-black pt-4 flex justify-center"></div>
+        
+      
+         <Section3Main />
+          
+        
         <div className="h-[100vh] w-full bg-blue-950 pt-4 flex justify-center"></div>
         <div className="h-[100vh] w-full bg-black pt-4 flex justify-center"></div>
         <div className="h-[100vh] w-full bg-blue-950 pt-4 flex justify-center"></div>
