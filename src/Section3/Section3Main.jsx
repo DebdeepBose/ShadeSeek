@@ -29,9 +29,8 @@ export const Section3Main = () => {
   ];
 
   return (
-    <div className="h-[100vh] w-full bg-white pt-4 flex justify-center">
-      {/* scrollable container when screen is too small */}
-      <div className="service px-[4%] lg:px-[12%] py-6 sm:py-10 lg:py-[80px] w-full overflow-y-auto">
+    <div className="h-full w-full bg-white pt-4 flex justify-center">
+      <div className="service px-[4%] lg:px-[12%] py-8 sm:py-12 lg:py-20 w-full">
         
         {/* Title */}
         <div className="service-title section-title mb-8 sm:mb-10 text-center lg:text-left">
