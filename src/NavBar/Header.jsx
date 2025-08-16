@@ -15,10 +15,10 @@ export const Header = ({
     >
       <div className="text-white flex justify-end text-2xl mt-3 font-bold ml-2 cursor-pointer ">
         <span className="translate-y-[-2px] transition-all duration-300">
-          Shade
+          Home
         </span>
         <span className="text-pink-500 hover:text-blue-500 hover:translate-y-[-3px] transition-all duration-300 cursor-pointer">
-          Seek
+          Hunt
         </span>
       </div>
 

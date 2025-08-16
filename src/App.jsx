@@ -6,6 +6,8 @@ import "./CSSMAIN/index.css";
 import { Header } from "./NavBar/Header";
 import { SidePanel } from "./NavBar/SidePanel";
 import { Hero } from "./Section1/Hero";
+import { DropdownOptions } from "./Section2/dropDownArr"; 
+import { Section2 } from "./Section2/MainSection2File";
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
@@ -18,11 +20,7 @@ function App() {
 
   const [activeTab, setActiveTab] = useState("Rent");
   const [selectedOption, setSelectedOption] = useState("");
-  const dropdownOptions = {
-    Rent: ["Studio", "Apartments", "Houses", "Luxury Homes", "Office Spaces"],
-    Buy: ["Status", "Property", "Active", "Sold"],
-    Foreclosure: ["Categories", "Apartments", "Houses", "Luxury Homes"],
-  };
+  const [searchValue, setSearchValue] = useState("");
 
   useLayoutEffect(() => {
     smootherRef.current = ScrollSmoother.create({
@@ -59,6 +57,13 @@ function App() {
     setIsPanelOpen(!isPanelOpen);
   };
 
+  // Optional: A function to handle the search logic
+  const handleSearch = () => {
+    console.log(
+      `Searching for: ${searchValue} in ${selectedOption} (${activeTab})`
+    );
+  };
+
   return (
     <div id="smooth-wrapper" ref={main}>
       <div className="w-full max-w-[1600px] bg-transparent">
@@ -76,62 +81,20 @@ function App() {
         >
           <Hero />
         </div>
-
         <SidePanel isPanelOpen={isPanelOpen} onLinkClick={handleBurgerClick} />
-        <div
-          ref={section2Ref}
-          className="relative h-[100vh] w-full bg-blue-950 flex justify-center items-center overflow-hidden"
-        >
-          <video
-            className="absolute top-1/2 left-1/2 w-full h-full object-cover transform -translate-x-1/2 -translate-y-1/2 z-[1]"
-            autoPlay
-            loop
-            muted
-            playsInline
-          >
-            <source src="sec1.mp4" type="video/mp4" />
-          </video>
-          <div className="absolute inset-0 bg-gray-800/50 z-[2]"></div>
-          <div className="relative z-10 flex flex-col justify-center items-center h-full px-6 md:px-12 text-white ">
-            <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-4">
-              Find Your Dream Home
-            </h1>
-            <p>Explore top properties</p>
-            <div className="bg-[#15052da1] p-5 rounded-lg max-w-4xl w-full mx-auto">
-              <div className="flex space-x-6 text-white font-semibold text-sm mb-4 border-b border-white/20">
-                {["Rent", "Buy", "Foreclosure"].map((tab) => (
-                  <button
-                    key={tab}
-                    onClick={() => {
-                      setActiveTab(tab);
-                      setSelectedOption(dropdownOptions[tab][0]);
-                    }}
-                    className={`uppercase pb-2 border-b-2 transition ${
-                      activeTab === tab
-                        ? `border-white text-white `
-                        : "border-transparent text-white/70 hover:text-white"
-                    }`}
-                  >
-                    {tab}
-                  </button>
-                ))}
-              </div>
-              <div className="flex flex-col md:flex-row bg-white rounded overflow-hidden">
-                <select
-                  value={selectedOption}
-                  onChange={(e) => setSelectedOption(e.target.value)}
-                  className="p-[15px] text-[#5c727d] border-r outline-none text-lg cursor-pointer appearance-none"
-                >
-                  {dropdownOptions[activeTab].map((option, idx) => (
-                    <option key={idx} value={option}>
-                      {option}
-                    </option>
-                  ))}
-                </select>
-              </div>
-            </div>
-          </div>
-        </div>
+
+        <Section2
+          section2Ref={section2Ref}
+          activeTab={activeTab}
+          setActiveTab={setActiveTab}
+          selectedOption={selectedOption}
+          setSelectedOption={setSelectedOption}
+          searchValue={searchValue}
+          setSearchValue={setSearchValue}
+          handleSearch={handleSearch}
+          DropdownOptions={DropdownOptions}
+        />
+
         <div className="h-[100vh] w-full bg-black pt-4 flex justify-center"></div>
         <div className="h-[100vh] w-full bg-blue-950 pt-4 flex justify-center"></div>
         <div className="h-[100vh] w-full bg-black pt-4 flex justify-center"></div>
