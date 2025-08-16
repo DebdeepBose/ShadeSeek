@@ -9,7 +9,7 @@ export const SearchBar = ({
 }) => {
   return (
     <div className="flex flex-col md:flex-row bg-white rounded overflow-hidden">
-      {/* Dropdown */}
+      
       <select
         value={selectedOption}
         onChange={(e) => setSelectedOption(e.target.value)}
@@ -22,7 +22,6 @@ export const SearchBar = ({
         ))}
       </select>
 
-      {/* Input */}
       <input
         type="text"
         placeholder="Enter an address, state, city, area or zip code"
@@ -31,7 +30,6 @@ export const SearchBar = ({
         className="flex-1 px-5 py-3 text-base text-black outline-none"
       />
 
-      {/* Button */}
       <button
         onClick={handleSearch}
         className="bg-violet-500 border border-violet-700 text-white relative btn px-6 py-5 flex items-center gap-2 text-lg font-semibold "

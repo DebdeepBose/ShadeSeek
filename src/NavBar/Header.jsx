@@ -14,7 +14,7 @@ export const Header = ({
       className="sticky top-0 z-50 w-full max-w-[1600px] px-4 flex items-center justify-between pl-4 pr-8 bg-black bg-opacity-0"
     >
       <div className="text-white flex justify-end text-2xl mt-3 font-bold ml-2 cursor-pointer ">
-        <span className="translate-y-[-2px] transition-all duration-300">
+        <span className="translate-y-[-1px] transition-all duration-300">
           Home
         </span>
         <span className="text-pink-500 hover:text-blue-500 hover:translate-y-[-3px] transition-all duration-300 cursor-pointer">
