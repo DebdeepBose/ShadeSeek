@@ -6,7 +6,7 @@ import "./CSSMAIN/index.css";
 import { Header } from "./NavBar/Header";
 import { SidePanel } from "./NavBar/SidePanel";
 import { Hero } from "./Section1/Hero";
-import { DropdownOptions } from "./Section2/dropDownArr"; 
+import { DropdownOptions } from "./Section2/dropDownArr";
 import { Section2 } from "./Section2/MainSection2File";
 import { Section3Main } from "./Section3/Section3Main";
 
@@ -77,11 +77,10 @@ function App() {
       <div id="smooth-content">
         <div
           id="section-1"
-          className="relative mt-[-80px] h-[100vh] w-full flex flex-col items-center justify-start bg-black overflow-hidden"
+          className="relative pt-[80px] h-[100vh] w-full flex flex-col items-center justify-start bg-black overflow-hidden"
         >
           <Hero />
         </div>
-  
 
         <Section2
           section2Ref={section2Ref}
@@ -95,11 +94,8 @@ function App() {
           DropdownOptions={DropdownOptions}
         />
 
-        
-      
-         <Section3Main />
-          
-        
+        <Section3Main />
+
         <div className="h-[100vh] w-full bg-blue-950 pt-4 flex justify-center"></div>
         <div className="h-[100vh] w-full bg-black pt-4 flex justify-center"></div>
         <div className="h-[100vh] w-full bg-blue-950 pt-4 flex justify-center"></div>
