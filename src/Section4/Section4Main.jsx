@@ -1,38 +1,37 @@
 // src/components/Section4Main.jsx
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Pagination } from "swiper/modules";
+import { Autoplay } from "swiper/modules"; // Remove Pagination
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import propertiesData from "../properties.json";
-// Import the new component
 import { PropertyCard } from "./PropertyCard";
-
-// CSS file for the swiper card to give better look
-import './SwiperCard.css'
+import "./SwiperCard.css";
 
 export function Section4Main() {
   return (
-    <div className="h-[100vh] w-full bg-blue-950 pt-4 flex justify-center">
-      <div className="spotlight-properties px-[2%] lg:px-[12%] py-[80px] w-full max-w-[1600px]">
+    <div className="h-[100vh] w-full bg-black pt-4 flex justify-center">
+      <div className="spotlight-properties px-[2%] lg:px-[12%] py-[50px] w-full max-w-[1600px]">
         {/* Title */}
-        <div className="section-title mb-10 text-white">
-          <h4 className="text-5xl font-bold pb-1">Spotlight Properties</h4>
-          <p className="font-semibold text-xl">
-            Add the listings you want to showcase
+        <div className="section-title mb-10 text-white sm:text-center">
+          <h4 className="text-5xl font-bold pb-1 text-white">
+            Spotlight <span className="text-blue-500">Properties</span>
+          </h4>
+          <p className="font-semibold text-xl mt-2 text-pink-500">
+            Check Out Some Of The Top-Tier Properties
           </p>
         </div>
 
         {/* Outer Swiper (Property Cards) */}
         <div className="py-2">
           <Swiper
-            modules={[Pagination, Autoplay]}
-            pagination={{ clickable: true }}
+            modules={[Autoplay]} // Remove Pagination here
+            pagination={false} // Set pagination to false
             slidesPerView={3}
             spaceBetween={20}
             loop={true}
             autoplay={{
-              delay: 3000,
+              delay: 1500,
               disableOnInteraction: false,
               pauseOnMouseEnter: true,
             }}
@@ -46,7 +45,10 @@ export function Section4Main() {
             className="property-card-slider py-5"
           >
             {propertiesData.spotlight.map((property) => (
-              <SwiperSlide key={`spotlight-${property.id}`}>
+              <SwiperSlide
+                key={`spotlight-${property.id}`}
+                style={{ display: "flex", justifyContent: "center" }}
+              >
                 <PropertyCard property={property} />
               </SwiperSlide>
             ))}

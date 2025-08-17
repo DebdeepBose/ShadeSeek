@@ -2,56 +2,61 @@
 
 /* General styles for the main property card container */
 .property-card-container {
-    /* Use flexbox for layout on smaller screens if needed */
-    display: flex;
-    flex-direction: column;
+  /* Use flexbox for layout on smaller screens if needed */
+  display: flex;
+  flex-direction: column;
 }
 
 /* Custom styles for the Swiper navigation arrows */
 .swiper-button-next,
 .swiper-button-prev {
-    color: #fff;
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    transition: opacity 0.3s ease;
+  /* Set arrow color to bright blue */
+  color: #0099ff;
+  /* Use a semi-transparent dark background for the arrow buttons */
+  background-color: rgba(20, 20, 40, 0.7);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
 /* Show arrows on hover of the swiper container */
 .swiper:hover .swiper-button-next,
 .swiper:hover .swiper-button-prev {
-    opacity: 1;
+  opacity: 1;
 }
 
 .swiper-button-next:after,
 .swiper-button-prev:after {
-    font-size: 16px;
-    font-weight: bold;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 /* Custom styles for the Swiper pagination dots */
 .swiper-pagination-bullet {
-    background-color: #fff !important;
-    opacity: 0.5 !important;
+  /* Set inactive bullets to a light, semi-transparent color */
+  background-color: #f0f0f0 !important;
+  opacity: 0.5 !important;
 }
 
 .swiper-pagination-bullet-active {
-    opacity: 1 !important;
-    background-color: #3b82f6 !important;
+  opacity: 1 !important;
+  /* Set active bullet color to bright blue, matching the theme */
+  background-color: #0099ff !important;
 }
 
 /* Remove default link underline from the card */
 a.block {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 /* Adjustments for the inner image swiper */
 .propertie-img-slider .swiper-pagination-bullet-active {
-    background-color: #fff !important;
+  /* Keep this white to contrast with the image backgrounds */
+  background-color: #fff !important;
 }

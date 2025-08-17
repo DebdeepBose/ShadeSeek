@@ -2,16 +2,16 @@
     "spotlight": [
         {
             "id": 1,
-            "title": "Guru Ji Welfare",
-            "bedrooms": 5,
-            "bathrooms": 6,
-            "size": "1900 sqft",
-            "price": "3,00,00,000",
+            "title": "RT Premier 1",
+            "bedrooms": 2,
+            "bathrooms": 2,
+            "size": "1600 sqft",
+            "price": "₹ 89.67 Lacs - 1.47 Cr",
             "tag": "Featured",
             "images": [
-                "/public/vite.svg",
-                "/public/vite.svg",
-                "/public/vite.svg"
+                "/src/Section4/1A.jpg",
+                "/src/Section4/1B.jpg",
+                "/src/Section4/1C.jpg"
             ],
             "avatar": "/public/vite.svg"
         },
@@ -21,42 +21,42 @@
             "bedrooms": 4,
             "bathrooms": 4,
             "size": "2200 sqft",
-            "price": "2,50,00,000",
+            "price": "₹ 1.2 - 1.59 Cr",
             "tag": "Featured",
             "images": [
-                "/public/vite.svg",
-                "/public/vite.svg",
-                "/public/vite.svg"
+                "/src/Section4/2A.jpg",
+                "/src/Section4/2B.jpg",
+                "/src/Section4/2C.jpg"
             ],
             "avatar": "/public/vite.svg"
         },
         {
             "id": 3,
-            "title": "Sunrise Residence",
+            "title": "Amrutha Platinum Towers",
             "bedrooms": 3,
             "bathrooms": 3,
             "size": "1750 sqft",
-            "price": "1,80,00,000",
+            "price": "₹ 1.1 - 1.18 Cr",
             "tag": "Featured",
             "images": [
-                "/public/vite.svg",
-                "/public/vite.svg",
-                "/public/vite.svg"
+                "/src/Section4/3A.jpg",
+                "/src/Section4/3B.jpg",
+                "/src/Section4/3C.jpg"
             ],
             "avatar": "/public/vite.svg"
         },
         {
             "id": 4,
-            "title": "Tranquil Haven",
+            "title": "Sarang By Samudhara",
             "bedrooms": 6,
             "bathrooms": 7,
-            "size": "2500 sqft",
-            "price": "4,20,00,000",
+            "size": "3500 sqft",
+            "price": "₹ 1.35 - 2.94 Cr",
             "tag": "Featured",
             "images": [
-                "/public/vite.svg",
-                "/public/vite.svg",
-                "/public/vite.svg"
+                "/src/Section4/4A.jpg",
+                "/src/Section4/4B.jpg",
+                "/src/Section4/4C.jpg"
             ],
             "avatar": "/public/vite.svg"
         }
@@ -64,7 +64,7 @@
     "top": [
         {
             "id": 1,
-            "title": "Mahama",
+            "title": "Mahamaya Estates",
             "bedrooms": 4,
             "bathrooms": 3,
             "size": "1900 sqft",

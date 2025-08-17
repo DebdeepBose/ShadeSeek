@@ -1,21 +1,23 @@
-// src/components/PropertyCard.jsx
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 import { FaBed, FaBath, FaExpandArrowsAlt } from "react-icons/fa";
 
-// You can use a standard <a> tag as a temporary replacement for Link
-// import { Link } from "react-router-dom";
-
 export function PropertyCard({ property }) {
   return (
-    <div className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 mb-10 overflow-hidden">
+    <div
+      className=" hover:-translate-y-3 rounded-2xl w-[95%] shadow-lg hover:shadow-xl transition-all duration-300 mb-10 overflow-hidden"
+      style={{
+        backgroundColor: "#141428",
+        background: "linear-gradient(135deg, #0099ff, #ff0099)",
+        boxShadow: "0 4px 15px rgba(0, 0, 0, 0.5)",
+      }}
+    >
       <a href={`/PropertiesDetails/${property.id}`} className="block">
-        {/* Inner Swiper for property images */}
         <Swiper
           modules={[Pagination]}
           pagination={{ clickable: true }}
           loop={true}
-          className="propertie-img-slider h-64"
+          className="propertie-img-slider h-60"
         >
           {property.images.map((img, index) => (
             <SwiperSlide key={index}>
@@ -29,12 +31,24 @@ export function PropertyCard({ property }) {
         </Swiper>
 
         {/* Property Details */}
-        <div className="py-4 my-2">
+        <div
+          className="py-4 my-2 text-white"
+          style={{
+            background: "rgba(20, 20, 40, 0.8)", // Semi-transparent dark overlay for text
+          }}
+        >
           <div className="px-3">
-            <h3 className="text-xl font-sans font-bold mb-2 text-black">
+            <h3
+              className="text-xl font-sans font-bold mb-2"
+              style={{ color: "#f0f0f0" }}
+            >
+              {" "}
+              {/* Light gray for title */}
               {property.title}
             </h3>
-            <p className="text-black text-sm mt-1">
+            <p className="text-sm mt-1" style={{ color: "#f0f0f0" }}>
+              {" "}
+              {/* Light gray for details */}
               <FaBed className="inline mr-1" />
               {property.bedrooms} Beds &nbsp; -- &nbsp;
               <FaBath className="inline mr-1" />
@@ -43,8 +57,13 @@ export function PropertyCard({ property }) {
               {property.size}
             </p>
           </div>
-          <div className="flex items-center justify-between mt-4 border-t px-4 pt-2">
-            <p className="font-bold text-lg mt-2 text-blue-800">
+          <div
+            className="flex items-center justify-between mt-4 border-t px-4 pt-2"
+            style={{ borderColor: "#333" }}
+          >
+            <p className="font-bold text-lg mt-2" style={{ color: "#0099ff" }}>
+              {" "}
+              {/* Bright blue for price */}
               {property.price}
             </p>
             <img
