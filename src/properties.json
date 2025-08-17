@@ -9,9 +9,9 @@
             "price": "₹ 89.67 Lacs - 1.47 Cr",
             "tag": "Featured",
             "images": [
-                "/src/Section4/1A.jpg",
-                "/src/Section4/1B.jpg",
-                "/src/Section4/1C.jpg"
+                "/public/1A.jpg",
+                "/public/1B.jpg",
+                "/public/1C.jpg"
             ],
             "avatar": "/public/vite.svg"
         },
@@ -24,9 +24,9 @@
             "price": "₹ 1.2 - 1.59 Cr",
             "tag": "Featured",
             "images": [
-                "/src/Section4/2A.jpg",
-                "/src/Section4/2B.jpg",
-                "/src/Section4/2C.jpg"
+                "/public/2A.jpg",
+                "/public/2B.jpg",
+                "/public/2C.jpg"
             ],
             "avatar": "/public/vite.svg"
         },
@@ -39,9 +39,9 @@
             "price": "₹ 1.1 - 1.18 Cr",
             "tag": "Featured",
             "images": [
-                "/src/Section4/3A.jpg",
-                "/src/Section4/3B.jpg",
-                "/src/Section4/3C.jpg"
+                "/public/3A.jpg",
+                "/public/3B.jpg",
+                "/public/3C.jpg"
             ],
             "avatar": "/public/vite.svg"
         },
@@ -54,9 +54,9 @@
             "price": "₹ 1.35 - 2.94 Cr",
             "tag": "Featured",
             "images": [
-                "/src/Section4/4A.jpg",
-                "/src/Section4/4B.jpg",
-                "/src/Section4/4C.jpg"
+                "/public/4A.jpg",
+                "/public/4B.jpg",
+                "/public/4C.jpg"
             ],
             "avatar": "/public/vite.svg"
         }
