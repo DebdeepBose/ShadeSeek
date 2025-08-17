@@ -8,7 +8,7 @@ export function CoverVidSec2(){
             muted
             playsInline
           >
-            <source src="sec1.mp4" type="video/mp4" />
+            <source src="/sec1.mp4" type="video/mp4" />
           </video>
           
     )

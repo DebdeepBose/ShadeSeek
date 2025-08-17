@@ -22,7 +22,6 @@ export function Section4Main() {
           </p>
         </div>
 
-        {/* Outer Swiper (Property Cards) */}
         <div className="py-2">
           <Swiper
             modules={[Autoplay]}
@@ -42,7 +41,7 @@ export function Section4Main() {
               575: { slidesPerView: 1 },
               0: { slidesPerView: 1 },
             }}
-            className="property-card-slider py-5"
+            className="property-card-slider bg-black py-4"
           >
             {propertiesData.spotlight.map((property) => (
               <SwiperSlide

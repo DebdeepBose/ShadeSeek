@@ -1,11 +1,12 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 import { FaBed, FaBath, FaExpandArrowsAlt } from "react-icons/fa";
+import "./SwiperCard.css";
 
 export function PropertyCard({ property }) {
   return (
     <div
-      className=" hover:-translate-y-3 rounded-2xl w-[95%] shadow-lg hover:shadow-xl transition-all duration-300 mb-10 overflow-hidden"
+      className=" mt-6 hover:-translate-y-3 rounded-2xl w-[95%] shadow-lg hover:shadow-xl transition-all duration-300 mb-10 overflow-hidden"
       style={{
         backgroundColor: "#141428",
         background: "linear-gradient(135deg, #0099ff, #ff0099)",
