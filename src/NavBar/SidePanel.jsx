@@ -1,7 +1,7 @@
 export const SidePanel = ({ isPanelOpen, onLinkClick }) => {
   return (
     <div
-      className={`fixed top-4 right-0 h-[500px] w-[200px] bg-gray-900 z-[49] transform transition-transform duration-500
+      className={`fixed top-0 right-0 h-[500px] w-[200px] bg-gray-900 z-[49] transform transition-transform duration-500
       ${isPanelOpen ? "translate-x-0" : "translate-x-full"}`}
     >
       <div className="flex flex-col items-center rounded-lg justify-center h-full space-y-8 text-white text-2xl font-bold">

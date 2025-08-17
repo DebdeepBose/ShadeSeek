@@ -1,0 +1,188 @@
+{
+    "spotlight": [
+        {
+            "id": 1,
+            "title": "Guru Ji Welfare",
+            "bedrooms": 5,
+            "bathrooms": 6,
+            "size": "1900 sqft",
+            "price": "3,00,00,000",
+            "tag": "Featured",
+            "images": [
+                "/public/vite.svg",
+                "/public/vite.svg",
+                "/public/vite.svg"
+            ],
+            "avatar": "/public/vite.svg"
+        },
+        {
+            "id": 2,
+            "title": "Green Meadows Villa",
+            "bedrooms": 4,
+            "bathrooms": 4,
+            "size": "2200 sqft",
+            "price": "2,50,00,000",
+            "tag": "Featured",
+            "images": [
+                "/public/vite.svg",
+                "/public/vite.svg",
+                "/public/vite.svg"
+            ],
+            "avatar": "/public/vite.svg"
+        },
+        {
+            "id": 3,
+            "title": "Sunrise Residence",
+            "bedrooms": 3,
+            "bathrooms": 3,
+            "size": "1750 sqft",
+            "price": "1,80,00,000",
+            "tag": "Featured",
+            "images": [
+                "/public/vite.svg",
+                "/public/vite.svg",
+                "/public/vite.svg"
+            ],
+            "avatar": "/public/vite.svg"
+        },
+        {
+            "id": 4,
+            "title": "Tranquil Haven",
+            "bedrooms": 6,
+            "bathrooms": 7,
+            "size": "2500 sqft",
+            "price": "4,20,00,000",
+            "tag": "Featured",
+            "images": [
+                "/public/vite.svg",
+                "/public/vite.svg",
+                "/public/vite.svg"
+            ],
+            "avatar": "/public/vite.svg"
+        }
+    ],
+    "top": [
+        {
+            "id": 1,
+            "title": "Mahama",
+            "bedrooms": 4,
+            "bathrooms": 3,
+            "size": "1900 sqft",
+            "price": "3,00,00,000",
+            "pere": "Mostly wood ahh...",
+            "images": [
+                "/public/vite.svg",
+                "/public/vite.svg",
+                "/public/vite.svg"
+            ],
+            "avatar": "/public/vite.svg"
+        },
+        {
+            "id": 2,
+            "title": "Royal Abode",
+            "bedrooms": 5,
+            "bathrooms": 5,
+            "size": "2100 sqft",
+            "price": "3,50,00,000",
+            "pere": "Luxurious feel with modern amenities...",
+            "images": [
+                "/public/vite.svg",
+                "/public/vite.svg",
+                "/public/vite.svg"
+            ],
+            "avatar": "/public/vite.svg"
+        },
+        {
+            "id": 3,
+            "title": "City View Apartment",
+            "bedrooms": 3,
+            "bathrooms": 2,
+            "size": "1500 sqft",
+            "price": "1,95,00,000",
+            "pere": "Stunning views and prime location...",
+            "images": [
+                "/public/vite.svg",
+                "/public/vite.svg",
+                "/public/vite.svg"
+            ],
+            "avatar": "/public/vite.svg"
+        },
+        {
+            "id": 4,
+            "title": "Elegant Mansion",
+            "bedrooms": 6,
+            "bathrooms": 8,
+            "size": "3000 sqft",
+            "price": "5,00,00,000",
+            "pere": "Spacious and tastefully designed...",
+            "images": [
+                "/public/vite.svg",
+                "/public/vite.svg",
+                "/public/vite.svg"
+            ],
+            "avatar": "/public/vite.svg"
+        }
+    ],
+    "latest": [
+        {
+            "id": 1,
+            "title": "Lol lmao house",
+            "bedrooms": 1,
+            "bathrooms": 2,
+            "size": "1900 sqft",
+            "price": "3,00,00,000",
+            "pere": "Mostly wood ahh...",
+            "images": [
+                "/public/vite.svg",
+                "/public/vite.svg",
+                "/public/vite.svg"
+            ],
+            "avatar": "/public/vite.svg"
+        },
+        {
+            "id": 2,
+            "title": "Cozy Cottage",
+            "bedrooms": 2,
+            "bathrooms": 2,
+            "size": "1200 sqft",
+            "price": "95,00,000",
+            "pere": "Charming and perfect for a small family...",
+            "images": [
+                "/public/vite.svg",
+                "/public/vite.svg",
+                "/public/vite.svg"
+            ],
+            "avatar": "/public/vite.svg"
+        },
+        {
+            "id": 3,
+            "title": "Modern Loft",
+            "bedrooms": 1,
+            "bathrooms": 1,
+            "size": "800 sqft",
+            "price": "80,00,000",
+            "pere": "Sleek design with an open layout...",
+            "images": [
+                "/public/vite.svg",
+                "/public/vite.svg",
+                "/public/vite.svg"
+            ],
+            "avatar": "/public/vite.svg"
+        },
+        {
+            "id": 4,
+            "title": "Family Home",
+            "bedrooms": 4,
+            "bathrooms": 3,
+            "size": "1850 sqft",
+            "price": "2,10,00,000",
+            "pere": "Spacious living in a quiet neighborhood...",
+            "images": [
+                "/public/vite.svg",
+                "/public/vite.svg",
+                "/public/vite.svg"
+            ],
+            "avatar": "/public/vite.svg"
+        }
+    ]
+}

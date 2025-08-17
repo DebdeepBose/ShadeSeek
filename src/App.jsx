@@ -81,7 +81,7 @@ function App() {
         >
           <Hero />
         </div>
-        <SidePanel isPanelOpen={isPanelOpen} onLinkClick={handleBurgerClick} />
+  
 
         <Section2
           section2Ref={section2Ref}
@@ -104,6 +104,7 @@ function App() {
         <div className="h-[100vh] w-full bg-black pt-4 flex justify-center"></div>
         <div className="h-[100vh] w-full bg-blue-950 pt-4 flex justify-center"></div>
       </div>
+      <SidePanel isPanelOpen={isPanelOpen} onLinkClick={handleBurgerClick} />
     </div>
   );
 }
