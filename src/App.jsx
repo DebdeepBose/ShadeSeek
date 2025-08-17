@@ -9,6 +9,9 @@ import { Hero } from "./Section1/Hero";
 import { DropdownOptions } from "./Section2/dropDownArr";
 import { Section2 } from "./Section2/MainSection2File";
 import { Section3Main } from "./Section3/Section3Main";
+import { Section4Main } from "./Section4/Section4Main";
+
+
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
@@ -96,7 +99,9 @@ function App() {
 
         <Section3Main />
 
-        <div className="h-[100vh] w-full bg-blue-950 pt-4 flex justify-center"></div>
+        {/* Spotlight Properties */}
+        <Section4Main />
+        
         <div className="h-[100vh] w-full bg-black pt-4 flex justify-center"></div>
         <div className="h-[100vh] w-full bg-blue-950 pt-4 flex justify-center"></div>
       </div>
