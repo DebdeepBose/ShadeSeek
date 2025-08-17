@@ -9,11 +9,11 @@
             "price": "₹ 89.67 Lacs - 1.47 Cr",
             "tag": "Featured",
             "images": [
-                "/public/1A.jpg",
-                "/public/1B.jpg",
-                "/public/1C.jpg"
+                "/1A.jpg",
+                "/1B.jpg",
+                "/1C.jpg"
             ],
-            "avatar": "/public/vite.svg"
+            "avatar": "/vite.svg"
         },
         {
             "id": 2,
@@ -24,11 +24,11 @@
             "price": "₹ 1.2 - 1.59 Cr",
             "tag": "Featured",
             "images": [
-                "/public/2A.jpg",
-                "/public/2B.jpg",
-                "/public/2C.jpg"
+                "/2A.jpg",
+                "/2B.jpg",
+                "/2C.jpg"
             ],
-            "avatar": "/public/vite.svg"
+            "avatar": "/vite.svg"
         },
         {
             "id": 3,
@@ -39,11 +39,11 @@
             "price": "₹ 1.1 - 1.18 Cr",
             "tag": "Featured",
             "images": [
-                "/public/3A.jpg",
-                "/public/3B.jpg",
-                "/public/3C.jpg"
+                "/3A.jpg",
+                "/3B.jpg",
+                "/3C.jpg"
             ],
-            "avatar": "/public/vite.svg"
+            "avatar": "/vite.svg"
         },
         {
             "id": 4,
@@ -54,11 +54,11 @@
             "price": "₹ 1.35 - 2.94 Cr",
             "tag": "Featured",
             "images": [
-                "/public/4A.jpg",
-                "/public/4B.jpg",
-                "/public/4C.jpg"
+                "/4A.jpg",
+                "/4B.jpg",
+                "/4C.jpg"
             ],
-            "avatar": "/public/vite.svg"
+            "avatar": "/vite.svg"
         }
     ],
     "top": [
@@ -71,11 +71,11 @@
             "price": "3,00,00,000",
             "pere": "Mostly wood ahh...",
             "images": [
-                "/public/vite.svg",
-                "/public/vite.svg",
-                "/public/vite.svg"
+                "/vite.svg",
+                "/vite.svg",
+                "/vite.svg"
             ],
-            "avatar": "/public/vite.svg"
+            "avatar": "/vite.svg"
         },
         {
             "id": 2,
@@ -86,11 +86,11 @@
             "price": "3,50,00,000",
             "pere": "Luxurious feel with modern amenities...",
             "images": [
-                "/public/vite.svg",
-                "/public/vite.svg",
-                "/public/vite.svg"
+                "/vite.svg",
+                "/vite.svg",
+                "/vite.svg"
             ],
-            "avatar": "/public/vite.svg"
+            "avatar": "/vite.svg"
         },
         {
             "id": 3,
@@ -101,11 +101,11 @@
             "price": "1,95,00,000",
             "pere": "Stunning views and prime location...",
             "images": [
-                "/public/vite.svg",
-                "/public/vite.svg",
-                "/public/vite.svg"
+                "/vite.svg",
+                "/vite.svg",
+                "/vite.svg"
             ],
-            "avatar": "/public/vite.svg"
+            "avatar": "/vite.svg"
         },
         {
             "id": 4,
@@ -116,11 +116,11 @@
             "price": "5,00,00,000",
             "pere": "Spacious and tastefully designed...",
             "images": [
-                "/public/vite.svg",
-                "/public/vite.svg",
-                "/public/vite.svg"
+                "/vite.svg",
+                "/vite.svg",
+                "/vite.svg"
             ],
-            "avatar": "/public/vite.svg"
+            "avatar": "/vite.svg"
         }
     ],
     "latest": [
@@ -133,11 +133,11 @@
             "price": "3,00,00,000",
             "pere": "Mostly wood ahh...",
             "images": [
-                "/public/vite.svg",
-                "/public/vite.svg",
-                "/public/vite.svg"
+                "/vite.svg",
+                "/vite.svg",
+                "/vite.svg"
             ],
-            "avatar": "/public/vite.svg"
+            "avatar": "/vite.svg"
         },
         {
             "id": 2,
@@ -148,11 +148,11 @@
             "price": "95,00,000",
             "pere": "Charming and perfect for a small family...",
             "images": [
-                "/public/vite.svg",
-                "/public/vite.svg",
-                "/public/vite.svg"
+                "/vite.svg",
+                "/vite.svg",
+                "/vite.svg"
             ],
-            "avatar": "/public/vite.svg"
+            "avatar": "/vite.svg"
         },
         {
             "id": 3,
@@ -163,11 +163,11 @@
             "price": "80,00,000",
             "pere": "Sleek design with an open layout...",
             "images": [
-                "/public/vite.svg",
-                "/public/vite.svg",
-                "/public/vite.svg"
+                "/vite.svg",
+                "/vite.svg",
+                "/vite.svg"
             ],
-            "avatar": "/public/vite.svg"
+            "avatar": "/vite.svg"
         },
         {
             "id": 4,
@@ -178,11 +178,11 @@
             "price": "2,10,00,000",
             "pere": "Spacious living in a quiet neighborhood...",
             "images": [
-                "/public/vite.svg",
-                "/public/vite.svg",
-                "/public/vite.svg"
+                "/vite.svg",
+                "/vite.svg",
+                "/vite.svg"
             ],
-            "avatar": "/public/vite.svg"
+            "avatar": "/vite.svg"
         }
     ]
 }
