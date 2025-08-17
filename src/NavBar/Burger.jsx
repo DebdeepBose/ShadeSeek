@@ -4,7 +4,7 @@ export const Loader = ({ isOpen, onClick }) => {
   return (
     <div
       onClick={onClick}
-      className="flex items-center mt-6 rotate-90 cursor-pointer relative w-[30px] h-[30px] z-50"
+      className=" flex items-center mt-6 rotate-90 cursor-pointer relative w-[30px] h-[30px] z-50"
     >
 
       <span

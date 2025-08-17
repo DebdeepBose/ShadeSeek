@@ -1,6 +1,6 @@
 // src/components/Section4Main.jsx
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper/modules"; // Remove Pagination
+import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -13,7 +13,7 @@ export function Section4Main() {
     <div className="h-[100vh] w-full bg-black pt-4 flex justify-center">
       <div className="spotlight-properties px-[2%] lg:px-[12%] py-[50px] w-full max-w-[1600px]">
         {/* Title */}
-        <div className="section-title mb-10 text-white sm:text-center">
+        <div className="section-title mb-10 text-white text-center lg:text-left">
           <h4 className="text-5xl font-bold pb-1 text-white">
             Spotlight <span className="text-blue-500">Properties</span>
           </h4>
@@ -25,8 +25,8 @@ export function Section4Main() {
         {/* Outer Swiper (Property Cards) */}
         <div className="py-2">
           <Swiper
-            modules={[Autoplay]} // Remove Pagination here
-            pagination={false} // Set pagination to false
+            modules={[Autoplay]}
+            pagination={false}
             slidesPerView={3}
             spaceBetween={20}
             loop={true}
@@ -47,7 +47,7 @@ export function Section4Main() {
             {propertiesData.spotlight.map((property) => (
               <SwiperSlide
                 key={`spotlight-${property.id}`}
-                style={{ display: "flex", justifyContent: "center", alignItems: "center" }}
+                style={{ display: "flex", justifyContent: "center" }}
               >
                 <PropertyCard property={property} />
               </SwiperSlide>

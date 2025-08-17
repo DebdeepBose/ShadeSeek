@@ -11,7 +11,7 @@ export const Header = ({
   return (
     <div
       id="header"
-      className="fixed top-0 z-50 w-full max-w-[1600px] px-4 flex items-center justify-between pl-4 pr-8 bg-black bg-opacity-0"
+      className=" top-0 fixed z-50 w-full max-w-[1600px] px-4 flex items-center justify-between pl-4 pr-8 bg-black bg-opacity-0"
     >
       <div className="text-white flex justify-end text-2xl mt-3 font-bold ml-2 cursor-pointer ">
         <span className="translate-y-[-1px] transition-all duration-300">
