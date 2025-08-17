@@ -47,7 +47,7 @@ export function Section4Main() {
             {propertiesData.spotlight.map((property) => (
               <SwiperSlide
                 key={`spotlight-${property.id}`}
-                style={{ display: "flex", justifyContent: "center" }}
+                style={{ display: "flex", justifyContent: "center", alignItems: "center" }}
               >
                 <PropertyCard property={property} />
               </SwiperSlide>
