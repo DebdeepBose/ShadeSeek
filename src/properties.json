@@ -12,8 +12,7 @@
                 "/1A.jpg",
                 "/1B.jpg",
                 "/1C.jpg"
-            ],
-            "avatar": "/dp1.jpg"
+            ]
         },
         {
             "id": 2,
@@ -27,8 +26,7 @@
                 "/2A.jpg",
                 "/2B.jpg",
                 "/2C.jpg"
-            ],
-            "avatar": "/dp2.jpg"
+            ]
         },
         {
             "id": 3,
@@ -42,8 +40,8 @@
                 "/3A.jpg",
                 "/3B.jpg",
                 "/3C.jpg"
-            ],
-            "avatar": "/dp3.jpg"
+            ]
+            
         },
         {
             "id": 4,
@@ -57,8 +55,8 @@
                 "/4A.jpg",
                 "/4B.jpg",
                 "/4C.jpg"
-            ],
-            "avatar": "/dp4.jpg"
+            ]
+            
         }
     ],
     "top": [

@@ -51,11 +51,7 @@ export function PropertyCard({ property }) {
             <p className="font-bold text-lg mt-2 text-[#0099ff]">
               {property.price}
             </p>
-            <img
-              src={property.avatar}
-              alt="Agent"
-              className="w-[55px] h-[55px] object-cover rounded-full border-4 border-blue-700"
-            />
+            
           </div>
         </div>
       </a>
