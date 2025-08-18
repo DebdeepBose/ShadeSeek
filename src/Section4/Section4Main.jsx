@@ -5,7 +5,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import propertiesData from "../properties.json";
 import { PropertyCard } from "./PropertyCard";
-import "./SwiperCard.css";
+
 
 export function Section4Main() {
   return (
