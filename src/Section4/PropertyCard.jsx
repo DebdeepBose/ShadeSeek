@@ -31,13 +31,11 @@ export function PropertyCard({ property }) {
           ))}
         </Swiper>
         <div
-  className="py-4 my-2 text-white"
-  style={{ backgroundColor: "rgba(20,20,40,0.8)" }}
->
+          className="py-4 my-2 text-white"
+          style={{ backgroundColor: "rgba(20,20,40,0.8)" }}
+        >
           <div className="px-3">
-            <h3
-              className="text-xl font-sans font-bold mb-2 text-[#f0f0f0]"
-            >
+            <h3 className="text-xl font-sans font-bold mb-2 text-[#f0f0f0]">
               {property.title}
             </h3>
             <p className="text-sm mt-1 text-[#f0f0f0]">
@@ -49,10 +47,8 @@ export function PropertyCard({ property }) {
               {property.size}
             </p>
           </div>
-          <div
-            className="flex items-center justify-between mt-4 border-t px-4 pt-2 border-[#333333]"
-          >
-            <p className="font-bold text-lg mt-2 text-[#0099ff]" >
+          <div className="flex items-center justify-between mt-4 border-t px-4 pt-2" style={{ border: "1px solid #333333" }}>
+            <p className="font-bold text-lg mt-2 text-[#0099ff]">
               {property.price}
             </p>
             <img
