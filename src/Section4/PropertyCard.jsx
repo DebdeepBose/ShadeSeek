@@ -1,7 +1,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 import { FaBed, FaBath, FaExpandArrowsAlt } from "react-icons/fa";
-import "./SwiperCard.css";
+
 
 export function PropertyCard({ property }) {
   return (
