@@ -36,7 +36,7 @@ export const Section3Main = () => {
         {/* Title */}
         <div className="service-title section-title mb-8 sm:mb-10 text-center lg:text-left">
           <h4 className="text-3xl sm:text-4xl lg:text-5xl text-white font-bold pb-1 select-none">
-            Our <span className=" text-sky-500">Service</span>
+            Our <span className=" text-transparent bg-clip-text brightness-125 bg-gradient-to-r from-sky-500 to-pink-400">Service</span>
           </h4>
           <p className="text-white font-[600] text-base sm:text-lg lg:text-xl select-none mt-2">
             <span className=" text-pink-500">ShadeSeek</span> offers the best services for <span className=" text-sky-500">Rentals, Dorms and Properties.</span>

@@ -7,15 +7,16 @@ import propertiesData from "../properties.json";
 import { PropertyCard } from "./PropertyCard";
 
 
+
 export function Section4Main() {
   return (
     <div className="h-[100vh] w-full bg-black pt-4 flex justify-center">
       <div className="spotlight-properties px-[2%] lg:px-[12%] py-[50px] w-full max-w-[1600px]">
         <div className="section-title mb-10 text-white text-center lg:text-left">
           <h4 className="text-5xl font-bold pb-1 text-white">
-            Spotlight <span className="text-blue-500">Properties</span>
+            Spotlight <span className="text-transparent bg-clip-text brightness-125 bg-gradient-to-r from-sky-500 to-pink-400">Properties</span>
           </h4>
-          <p className="font-semibold text-xl mt-2 text-pink-500">
+          <p className="font-semibold text-xl mt-2 text-gray-400">
             Check Out Some Of The Top-Tier Properties
           </p>
         </div>
