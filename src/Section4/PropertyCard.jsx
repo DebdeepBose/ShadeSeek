@@ -31,8 +31,9 @@ export function PropertyCard({ property }) {
           ))}
         </Swiper>
         <div
-          className="py-4 my-2 text-white bg-[rgba(20,20,40,0.8)]"
-        >
+  className="py-4 my-2 text-white"
+  style={{ backgroundColor: "rgba(20,20,40,0.8)" }}
+>
           <div className="px-3">
             <h3
               className="text-xl font-sans font-bold mb-2 text-[#f0f0f0]"
