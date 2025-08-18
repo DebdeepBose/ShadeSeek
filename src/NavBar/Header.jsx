@@ -29,7 +29,7 @@ export const Header = ({
       )}
 
       <div className="hidden md:block">
-        <Explore onClick={onExploreClick} />
+        <Explore onExploreClick={onExploreClick} />
       </div>
     </div>
   );
