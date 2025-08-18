@@ -1,17 +1,14 @@
-import React, { useRef, useLayoutEffect, useState, useEffect } from "react";
+import { useRef, useLayoutEffect, useState, useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollSmoother } from "gsap/ScrollSmoother";
 import "./CSSMAIN/index.css";
 import { Header } from "./NavBar/Header";
 import { SidePanel } from "./NavBar/SidePanel";
-import { Hero } from "./Section1/Hero";
-import { DropdownOptions } from "./Section2/dropDownArr";
-import { Section2 } from "./Section2/MainSection2File";
+import { Section1Main } from "./Section1/Section1Main";
+import { Section2Main } from "./Section2/Section2Main";
 import { Section3Main } from "./Section3/Section3Main";
 import { Section4Main } from "./Section4/Section4Main";
-
-
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
@@ -21,10 +18,6 @@ function App() {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
   const smootherRef = useRef(null);
   const [isPanelOpen, setIsPanelOpen] = useState(false);
-
-  const [activeTab, setActiveTab] = useState("Rent");
-  const [selectedOption, setSelectedOption] = useState("");
-  const [searchValue, setSearchValue] = useState("");
 
   useLayoutEffect(() => {
     smootherRef.current = ScrollSmoother.create({
@@ -61,12 +54,6 @@ function App() {
     setIsPanelOpen(!isPanelOpen);
   };
 
-  const handleSearch = () => {
-    console.log(
-      `Searching for: ${searchValue} in ${selectedOption} (${activeTab})`
-    );
-  };
-
   return (
     <div id="smooth-wrapper" ref={main}>
       <div className="w-full max-w-[1600px] bg-transparent">
@@ -78,30 +65,11 @@ function App() {
         />
       </div>
       <div id="smooth-content">
-        <div
-          id="section-1"
-          className="relative pt-[80px] h-[100vh] w-full flex flex-col items-center justify-start bg-black overflow-hidden"
-        >
-          <Hero />
-        </div>
-
-        <Section2
-          section2Ref={section2Ref}
-          activeTab={activeTab}
-          setActiveTab={setActiveTab}
-          selectedOption={selectedOption}
-          setSelectedOption={setSelectedOption}
-          searchValue={searchValue}
-          setSearchValue={setSearchValue}
-          handleSearch={handleSearch}
-          DropdownOptions={DropdownOptions}
-        />
-
+        <Section1Main /> 
+        <Section2Main section2Ref={section2Ref} />
         <Section3Main />
-
-        {/* Spotlight Properties */}
         <Section4Main />
-        
+
         <div className="h-[100vh] w-full bg-black pt-4 flex justify-center"></div>
         <div className="h-[100vh] w-full bg-blue-950 pt-4 flex justify-center"></div>
       </div>

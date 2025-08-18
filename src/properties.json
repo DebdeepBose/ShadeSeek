@@ -13,7 +13,7 @@
                 "/1B.jpg",
                 "/1C.jpg"
             ],
-            "avatar": "/vite.svg"
+            "avatar": "/dp1.jpg"
         },
         {
             "id": 2,
@@ -28,7 +28,7 @@
                 "/2B.jpg",
                 "/2C.jpg"
             ],
-            "avatar": "/vite.svg"
+            "avatar": "/dp2.jpg"
         },
         {
             "id": 3,
@@ -43,7 +43,7 @@
                 "/3B.jpg",
                 "/3C.jpg"
             ],
-            "avatar": "/vite.svg"
+            "avatar": "/dp3.jpg"
         },
         {
             "id": 4,
@@ -58,7 +58,7 @@
                 "/4B.jpg",
                 "/4C.jpg"
             ],
-            "avatar": "/vite.svg"
+            "avatar": "/dp4.jpg"
         }
     ],
     "top": [

@@ -1,4 +1,3 @@
-// src/components/Section4Main.jsx
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
@@ -12,7 +11,6 @@ export function Section4Main() {
   return (
     <div className="h-[100vh] w-full bg-black pt-4 flex justify-center">
       <div className="spotlight-properties px-[2%] lg:px-[12%] py-[50px] w-full max-w-[1600px]">
-        {/* Title */}
         <div className="section-title mb-10 text-white text-center lg:text-left">
           <h4 className="text-5xl font-bold pb-1 text-white">
             Spotlight <span className="text-blue-500">Properties</span>
@@ -25,14 +23,14 @@ export function Section4Main() {
         <div className="py-2">
           <Swiper
             modules={[Autoplay]}
-            pagination={false}
+            pagination={true}
             slidesPerView={3}
             spaceBetween={20}
             loop={true}
             autoplay={{
-              delay: 1500,
+              delay: 2500,
               disableOnInteraction: false,
-              pauseOnMouseEnter: true,
+              pauseOnMouseEnter: false,
             }}
             breakpoints={{
               1399: { slidesPerView: 3 },
@@ -44,7 +42,7 @@ export function Section4Main() {
             className="property-card-slider bg-black py-4"
           >
             {propertiesData.spotlight.map((property) => (
-              <SwiperSlide
+              <SwiperSlide  
                 key={`spotlight-${property.id}`}
                 style={{ display: "flex", justifyContent: "center" }}
               >

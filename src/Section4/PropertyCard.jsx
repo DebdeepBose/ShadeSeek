@@ -10,7 +10,7 @@ export function PropertyCard({ property }) {
       style={{
         backgroundColor: "#141428",
         background: "linear-gradient(135deg, #0099ff, #ff0099)",
-        boxShadow: "0 4px 15px rgba(0, 0, 0, 0.5)",
+        boxShadow: "0 4px 15px rgba(0, 0, 0, 1)",
       }}
     >
       <a href={`/PropertiesDetails/${property.id}`} className="block">
@@ -30,26 +30,16 @@ export function PropertyCard({ property }) {
             </SwiperSlide>
           ))}
         </Swiper>
-
-        {/* Property Details */}
         <div
-          className="py-4 my-2 text-white"
-          style={{
-            background: "rgba(20, 20, 40, 0.8)", // Semi-transparent dark overlay for text
-          }}
+          className="py-4 my-2 text-white bg-[rgba(20,20,40,0.8)]"
         >
           <div className="px-3">
             <h3
-              className="text-xl font-sans font-bold mb-2"
-              style={{ color: "#f0f0f0" }}
+              className="text-xl font-sans font-bold mb-2 text-[#f0f0f0]"
             >
-              {" "}
-              {/* Light gray for title */}
               {property.title}
             </h3>
-            <p className="text-sm mt-1" style={{ color: "#f0f0f0" }}>
-              {" "}
-              {/* Light gray for details */}
+            <p className="text-sm mt-1 text-[#f0f0f0]">
               <FaBed className="inline mr-1" />
               {property.bedrooms} Beds &nbsp; -- &nbsp;
               <FaBath className="inline mr-1" />
@@ -59,18 +49,15 @@ export function PropertyCard({ property }) {
             </p>
           </div>
           <div
-            className="flex items-center justify-between mt-4 border-t px-4 pt-2"
-            style={{ borderColor: "#333" }}
+            className="flex items-center justify-between mt-4 border-t px-4 pt-2 border-[#333333]"
           >
-            <p className="font-bold text-lg mt-2" style={{ color: "#0099ff" }}>
-              {" "}
-              {/* Bright blue for price */}
+            <p className="font-bold text-lg mt-2 text-[#0099ff]" >
               {property.price}
             </p>
             <img
               src={property.avatar}
               alt="Agent"
-              className="w-[50px] h-[50px] object-cover rounded-full border-2 border-gray-200"
+              className="w-[55px] h-[55px] object-cover rounded-full border-4 border-blue-700"
             />
           </div>
         </div>

@@ -16,7 +16,7 @@ export const Section2 = ({
   return (
     <div
       ref={section2Ref}
-      className="relative h-[100vh] w-full bg-blue-950 flex justify-center items-center overflow-hidden"
+      className="relative h-[100vh] w-full bg-black flex justify-center items-center overflow-hidden"
     >
       <CoverVidSec2 />
       <div className="absolute inset-0 bg-gray-800/50 z-[2]"></div>
