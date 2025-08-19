@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 export const SidePanel = ({ isPanelOpen, onLinkClick }) => {
   return (
     <div
@@ -18,12 +19,12 @@ export const SidePanel = ({ isPanelOpen, onLinkClick }) => {
             onClick={onLinkClick}>
             About
           </a>
-          <a
+          <Link to="/blogs"
             className="group w-[150px] text-center py-2 rounded-lg transition-colors duration-300 text-yellow-400 hover:text-gray-900 hover:bg-yellow-400"
             href="#contact"
             onClick={onLinkClick}>
             Blogs
-          </a>
+          </Link>
           <a
             className="group w-[150px] text-center py-2 rounded-lg transition-colors duration-300 text-pink-400 hover:text-gray-900 hover:bg-pink-400"
             href="#services"

@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import { Header } from "../NavBar/Header";
 import { Plus } from "lucide-react";
 
 export function Blogs() {
@@ -10,18 +9,31 @@ export function Blogs() {
       : [
           {
             id: 1,
-            title: "5 Tips for First-Time Buyers",
-            desc: "Learn the essentials to make your first home purchase stress-free.",
+            title: "3 Tips for First-Time Buyers",
+            desc: [
+              "Buying your first home is exciting, but it can also feel overwhelming. Between mortgages, inspections, and contracts, it's easy to miss important details. Here are five practical tips to help you make the process smoother and less stressful:",
+              " 1. Get Pre-Approved Early - Before you even start looking at houses, talk to your bank or lender. Getting pre-approved gives you a clear budget and shows sellers that you're serious. This can make your offer stand out in competitive markets.",
+              " 2. Prioritize Location Over Features - You can always upgrade a kitchen or repaint the walls, but you can't change the neighborhood. Think about commute time, schools, safety, and future growth of the area before making a decision.",
+              " 3. Don't Skip the Home Inspection - It might feel like an extra cost, but a proper inspection can save you thousands later. Inspectors can uncover hidden issues like plumbing leaks, foundation cracks, or outdated wiring that you might miss.",
+            ],
           },
           {
             id: 2,
-            title: "Top 10 Rental Hacks",
-            desc: "Discover how to save money and find the best rental deals.",
+            title: "3 Rental Hacks to Save Money",
+            desc: [
+              "1. Negotiate Rent - Many landlords are open to negotiation, especially if you have a good rental history or can pay a few months in advance. Always ask politely if the rent is flexible.",
+              "2. Look Beyond Popular Platforms - Listings on big rental apps go fast. Check local Facebook groups, community boards, or word-of-mouth leads to find hidden deals.",
+              "3. Move During the Off-Season - Rents often drop during winter or less popular moving months. If you’re flexible, shifting your move date could save you big.",
+            ],
           },
           {
             id: 3,
             title: "Luxury Living Guide",
-            desc: "Explore the world of premium homes and high-end amenities.",
+            desc: [
+              "1. Prime Locations — Luxury homes are often in prestigious neighborhoods with easy access to business hubs, fine dining, and cultural hotspots.",
+              "2. High-End Interiors — Expect designer kitchens, spa-like bathrooms, and premium finishes like marble, hardwood, and smart lighting.",
+              "3. World-Class Amenities — Many premium properties include gyms, pools, concierge services, and private lounges tailored to residents’ comfort.",
+            ],
           },
         ];
   });
@@ -29,7 +41,6 @@ export function Blogs() {
   const [newBlog, setNewBlog] = useState({ title: "", desc: "" });
   const [editId, setEditId] = useState(null);
 
-  // Save to localStorage whenever blogs change
   useEffect(() => {
     localStorage.setItem("blogs", JSON.stringify(blogs));
   }, [blogs]);
@@ -39,7 +50,9 @@ export function Blogs() {
     if (editId) {
       setBlogs(
         blogs.map((b) =>
-          b.id === editId ? { ...b, title: newBlog.title, desc: newBlog.desc } : b
+          b.id === editId
+            ? { ...b, title: newBlog.title, desc: newBlog.desc }
+            : b
         )
       );
       setEditId(null);
@@ -59,28 +72,36 @@ export function Blogs() {
   };
 
   return (
-    <div className="w-screen min-h-screen bg-black text-white">
-     
+    <div className="w-screen min-h-screen bg-black text-white relative overflow-hidden">
+      <div className="absolute h-[500px] w-[500px] bg-blue-600 rounded-full blur-3xl opacity-50 mix-blend-screen -top-20 -left-20"></div>
+      <div className="absolute h-[500px] w-[500px] bg-pink-600 rounded-full blur-3xl opacity-50 mix-blend-screen -bottom-20 -right-20"></div>
 
-      <div className="max-w-6xl mx-auto px-6 py-12">
-        {/* Page Heading */}
-        <h2 className="text-4xl md:text-5xl font-extrabold text-center mt-16 mb-8">
-          Our{" "}
+      <div className="max-w-6xl mx-auto px-6 py-12 relative z-10">
+        <h2 className="text-5xl brightness-125 md:text-7xl font-extrabold text-center mt-32 mb-2">
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-500 to-pink-400">
             Blogs
           </span>
         </h2>
 
-        {/* Blog Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+        <h3 className="text-center font-semibold text-xl text-transparent bg-clip-text bg-gradient-to-r from-sky-500 to-pink-400">
+          Share Your Journey Of Home Hunting
+        </h3>
+
+        <div className="grid grid-cols-1 md:grid-cols-1 gap-8 mt-16">
           {blogs.map((blog) => (
             <div
               key={blog.id}
               className="p-6 rounded-2xl bg-gradient-to-b from-gray-900 to-gray-800 shadow-lg flex flex-col justify-between"
             >
               <div>
-                <h3 className="text-xl font-bold mb-2">{blog.title}</h3>
-                <p className="text-gray-400">{blog.desc}</p>
+                <h3 className="text-xl font-bold text-pink-300 mb-2">{blog.title}</h3>
+                <div className="text-gray-400 space-y-3">
+                  {Array.isArray(blog.desc) ? (
+                    blog.desc.map((line, idx) => <p key={idx}>{line}</p>)
+                  ) : (
+                    <p>{blog.desc}</p>
+                  )}
+                </div>
               </div>
               <div className="flex justify-between mt-4 text-sm">
                 <button
@@ -100,10 +121,9 @@ export function Blogs() {
           ))}
         </div>
 
-        {/* Add/Edit Blog Form */}
-        <div className="bg-gray-900 p-6 rounded-2xl shadow-lg">
+        <div className="bg-gray-900 p-6 rounded-2xl shadow-lg mt-12">
           <h3 className="text-2xl font-semibold mb-4 flex items-center gap-2">
-            <Plus className="w-6 h-6 text-sky-400" />{" "}
+            <Plus className="w-6 h-6 text-sky-400" />
             {editId ? "Edit Blog" : "Add a Blog"}
           </h3>
           <input
