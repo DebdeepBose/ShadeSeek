@@ -34,7 +34,7 @@ export const Section5Main = () => {
 
   return (
     <div className="h-full w-full bg-black pt-4 flex justify-center ">
-      <section className="relative bg-[#0a0a0a] py-16 px-6 md:px-12 text-white">
+      <section className="relative bg-black py-16 px-6 md:px-12 text-white">
         {/* Heading */}
         <div className="flex justify-between items-center mb-12 flex-col gap-4 sm:flex-row lg:gap-0">
           <div className="text-center lg:text-start">

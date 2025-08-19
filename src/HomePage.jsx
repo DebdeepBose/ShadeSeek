@@ -11,8 +11,6 @@ import { Section3Main } from "./Section3/Section3Main";
 import { Section4Main } from "./Section4/Section4Main";
 import { Section5Main } from "./Section5/Section5Main";
 
-
-
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
 export function HomePage() {
@@ -68,20 +66,15 @@ export function HomePage() {
         />
       </div>
       <div id="smooth-content">
-        <Section1Main /> 
+        <Section1Main />
         <Section2Main section2Ref={section2Ref} />
         <Section3Main />
         <Section4Main />
+        <Section5Main />
 
-        
-          <Section5Main/>
-      
-        <div className="h-[100vh] w-full bg-blue-950 pt-4 flex justify-center"></div>
+        <div className="h-[100vh] w-full bg-black pt-4 flex justify-center"></div>
       </div>
       <SidePanel isPanelOpen={isPanelOpen} onLinkClick={handleBurgerClick} />
-
     </div>
-
   );
 }
-
