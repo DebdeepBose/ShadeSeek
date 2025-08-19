@@ -60,7 +60,7 @@ export function Blogs() {
 
   return (
     <div className="w-screen min-h-screen bg-black text-white">
-      <Header />
+     
 
       <div className="max-w-6xl mx-auto px-6 py-12">
         {/* Page Heading */}
