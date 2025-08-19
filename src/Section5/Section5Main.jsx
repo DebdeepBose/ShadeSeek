@@ -34,7 +34,8 @@ export const Section5Main = () => {
 
   return (
     <div className="h-full w-full bg-black pt-4 flex justify-center ">
-      <section className="relative bg-black py-16 px-6 md:px-12 text-white">
+      <div className="relative bg-black md:px-12 text-white max-w-8xl mx-auto px-[4%] lg:px-[12%] py-8 sm:py-12 lg:py-20 w-full">
+
         {/* Heading */}
         <div className="flex justify-between items-center mb-12 flex-col gap-4 sm:flex-row lg:gap-0">
           <div className="text-center lg:text-start">
@@ -58,7 +59,7 @@ export const Section5Main = () => {
             <PropertyCard key={property.id} property={property} />
           ))}
         </div>
-      </section>
+      </div>
     </div>
   );
 };
