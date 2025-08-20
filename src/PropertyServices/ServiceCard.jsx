@@ -16,7 +16,7 @@ export const ServiceCard = ({
 
   return (
     <div
-      className="h-[90%] w-[90%] flex hover:scale-105 transition-all duration-300 ease-out flex-auto justify-center rounded-2xl items-center flex-col bg-black relative"
+      className="relative inset-0 flex hover:scale-105 transition-all duration-300 ease-out flex-auto justify-center rounded-2xl items-center flex-col bg-black "
       style={{
         backgroundImage: `url(${bgImage})`,
         backgroundSize: "cover",
@@ -26,10 +26,10 @@ export const ServiceCard = ({
       {/* Dark overlay */}
       <div className="absolute inset-0 bg-black opacity-60 rounded-2xl"></div>
 
-      <div className="relative z-10 text-center">
+      <div className="relative w-full z-10 text-center">
         {/* Front Card */}
         <div
-          className="h-[250px] w-[300px] rounded-lg bg-transparent flex items-center justify-center text-white font-bold cursor-pointer transition"
+          className="h-[250px] w-full rounded-lg bg-transparent flex items-center justify-center text-white font-bold cursor-pointer transition"
           onClick={toggleCard}
         >
           <div>
@@ -41,14 +41,14 @@ export const ServiceCard = ({
         {/* Sliding Overlay */}
         <div
           className={`
-            absolute top-[13px] -left-[47px] md:-left-[27px] h-[225px] w-[395px] md:w-[355px]
-            flex flex-col items-center justify-center text-center font-bold text-white
-            bg-gradient-to-r from-blue-800/40 via-purple-500/30 to-pink-800/40
-            backdrop-blur-md border border-white/20 shadow-lg shadow-pink-500/20 rounded-2xl
-            transition-all duration-300 ease-out 
-            ${isVisible 
-              ? 'translate-y-0 opacity-100 scale-100' 
-              : 'translate-y-6 opacity-0 scale-95 pointer-events-none'
+            absolute inset-0 
+    flex flex-col items-center justify-center text-center font-bold text-white
+    bg-gradient-to-r from-blue-800/40 via-purple-500/30 to-pink-800/40
+    backdrop-blur-md border border-white/20 shadow-lg shadow-pink-500/20 rounded-2xl
+    transition-all duration-300 ease-out
+    ${isVisible 
+      ? 'translate-y-0 opacity-100 scale-100' 
+      : 'translate-y-6 opacity-0 scale-95 pointer-events-none'
             }
           `}
         >

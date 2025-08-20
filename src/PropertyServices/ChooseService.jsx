@@ -71,7 +71,8 @@ export const ChooseService = () => {
           </h1>
         </div>
 
-        <div className="w-full max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-6 place-items-center">
+        <div className="w-full max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-16 gap-y-8 py-3 px-8">
+
           {services.map((s, i) => (
             <ServiceCard key={i} {...s} />
           ))}
