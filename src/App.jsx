@@ -2,7 +2,8 @@ import { Routes, Route } from "react-router-dom";
 import { HomePage } from "./HomePage";
 import { AboutPage } from "./About/About";
 import { Blogs } from "./Blog/Blogs";
-import { Layout } from "./Layout"; // import the new Layout
+import { Layout } from "./Layout";
+import { ChooseService } from "./PropertyServices/ChooseService";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/blogs" element={<Blogs />} />
+        <Route path="/ChooseService" element={<ChooseService />} />
       </Routes>
     </Layout>
   );

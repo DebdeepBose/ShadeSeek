@@ -53,7 +53,7 @@ export function Nav() {
             </Link>
 
       {/* Services Link */}
-            <Link to="/">
+            <Link to="/ChooseService">
        <li
         className="flex items-center gap-2 px-1 sm:px-2 text-white/80 transition-transform hover:scale-125 hover:text-[#b2e2f2]"
         data-tooltip-id="my-tooltip"
