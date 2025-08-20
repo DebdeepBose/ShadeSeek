@@ -46,7 +46,9 @@ export function Blogs() {
   }, [blogs]);
 
   const handleAdd = () => {
-    if (!newBlog.title.trim() || !newBlog.desc.trim()) return;
+    if (!newBlog.title.trim() || !newBlog.desc.trim()) {
+      return;
+    }
     if (editId) {
       setBlogs(
         blogs.map((b) =>
