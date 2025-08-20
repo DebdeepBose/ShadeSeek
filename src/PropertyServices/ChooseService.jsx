@@ -42,7 +42,7 @@ export const ChooseService = () => {
           <div className="absolute top-1/2 right-64 -translate-y-1/2 md:-translate-y-[210px] h-[300px] w-[300px] lg:h-[500px] lg:w-[500px] bg-pink-600 rounded-full blur-3xl opacity-60 mix-blend-screen"></div>
         </div>
 
-        <div className="relative z-10 p-6 text-center">
+        <div className="relative z-10 p-6 text-center select-none">
           <h1 className="text-5xl md:text-7xl font-extrabold mb-4 text-white">
             Check Out Our <span className="text-blue-500">Services</span>
           </h1>
@@ -53,10 +53,10 @@ export const ChooseService = () => {
       </div>
 
       {/* Services grid */}
-      <div className="min-h-screen w-full bg-black text-center flex flex-col items-center justify-center">
+      <div className="min-h-screen select-none w-full bg-black text-center flex flex-col items-center justify-center">
         <div>
-          <h1 className="text-white text-3xl font-bold mb-8">
-            Pick And Explore
+          <h1 className="text-white text-6xl font-bold mb-8 select-none">
+            Pick And <span className="text-pink-500">Explore</span>
           </h1>
         </div>
 
@@ -66,7 +66,7 @@ export const ChooseService = () => {
           ))}
         </div>
       </div>
-      <div className="h-screen w-screen bg-black"></div>
+      <div className="h-[300px] w-screen bg-black"></div>
     </>
   );
 };

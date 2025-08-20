@@ -9,7 +9,7 @@ export const ServiceCard = ({ title, description, bgImage }) => {
 
   return (
     <div
-      className="h-[90%] w-[90%] flex flex-auto justify-center rounded-2xl items-center flex-col bg-black relative"
+      className="h-[90%] w-[90%] flex hover:scale-105 transition-all duration-300 ease-out flex-auto justify-center rounded-2xl items-center flex-col bg-black relative"
       style={{
         backgroundImage: `url(${bgImage})`,
         backgroundSize: "cover",
