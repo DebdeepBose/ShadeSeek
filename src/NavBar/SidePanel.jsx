@@ -24,13 +24,13 @@ export const SidePanel = ({ isPanelOpen, onLinkClick }) => {
             href="#contact"
             onClick={onLinkClick}>
             Blogs
-          </Link>
-          <a
+          </Link >
+            <Link to="/ChooseService"
             className="group w-[150px] text-center py-2 rounded-lg transition-colors duration-300 text-pink-400 hover:text-gray-900 hover:bg-pink-400"
             href="#services"
             onClick={onLinkClick}>
             Services
-          </a>
+          </Link >
           <a
             className="group w-[150px] text-center py-2 rounded-lg transition-colors duration-300 text-blue-600 hover:text-white hover:bg-blue-600"
             href="#contact"
