@@ -35,7 +35,7 @@ export const ChooseService = () => {
   ];
 
   return (
-    <>
+    <div className="bg-black">
       <div className="relative min-h-screen w-screen flex flex-col items-center justify-center bg-black overflow-hidden">
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="absolute top-1/2 left-64 -translate-y-1/2 md:-translate-y-[210px] h-[300px] w-[300px] lg:h-[500px] lg:w-[500px] bg-blue-600 rounded-full blur-3xl opacity-60 mix-blend-screen"></div>
@@ -66,6 +66,6 @@ export const ChooseService = () => {
           ))}
         </div>
       </div>
-    </>
+    </div>
   );
 };
