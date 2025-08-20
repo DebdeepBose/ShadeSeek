@@ -23,11 +23,9 @@ export const ServiceCard = ({
         backgroundPosition: "center",
       }}
     >
-      {/* Dark overlay */}
       <div className="absolute inset-0 bg-black opacity-60 rounded-2xl"></div>
 
       <div className="relative w-full z-10 text-center">
-        {/* Front Card */}
         <div
           className="h-[250px] w-full rounded-lg bg-transparent flex items-center justify-center text-white font-bold cursor-pointer transition"
           onClick={toggleCard}
@@ -37,8 +35,6 @@ export const ServiceCard = ({
             <p className="text-gray-300 font-semibold text-xl">{description}</p>
           </div>
         </div>
-
-        {/* Sliding Overlay */}
         <div
           className={`
             absolute inset-0 
@@ -52,15 +48,13 @@ export const ServiceCard = ({
             }
           `}
         >
-          {/* Close Button */}
+
           <button
             className="absolute top-3 right-3 p-1 rounded-full hover:bg-white/10"
             onClick={toggleCard}
           >
             <X size={18} />
           </button>
-
-          {/* Overlay Text */}
           <h1 className="bg-gradient-to-r from-pink-400 to-purple-300 bg-clip-text text-transparent font-bold text-lg md:text-xl px-4">
             {overlayTitle}
           </h1>
@@ -69,7 +63,6 @@ export const ServiceCard = ({
             {overlayDesc}
           </p>
 
-          {/* Button */}
           <button className="mt-4 px-4 py-2 rounded-3xl border border-transparent bg-gradient-to-r from-pink-500 to-pink-300 hover:shadow-lg active:scale-95  hover:scale-110 transition">
             <span className=" rounded-lg text-white">
               Check Out
