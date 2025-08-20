@@ -5,32 +5,44 @@ export const ChooseService = () => {
     {
       title: "Luxury Villas",
       description: "Spacious, modern living spaces",
-      bgImage: "/public/1A.jpg",
+      bgImage: "/1A.jpg",
+      overlayTitle: "Explore Luxury Villas",
+      overlayDesc: "Look up prices, locations & more",
     },
     {
       title: "City Apartments",
       description: "Prime locations & amenities",
-      bgImage: "/public/1A.jpg",
+      bgImage: "/1A.jpg",
+      overlayTitle: "Discover City Apartments",
+      overlayDesc: "Living in prime locations with top amenities",
     },
     {
       title: "Beach Houses",
       description: "Oceanfront lifestyle",
-      bgImage: "/public/1A.jpg",
+      bgImage: "/1A.jpg",
+      overlayTitle: "Relax in Beach Houses",
+      overlayDesc: "Experience stunning views & coastal lifestyle",
     },
     {
       title: "Farmhouses",
       description: "Rustic charm & open land",
-      bgImage: "/public/1A.jpg",
+      bgImage: "/1A.jpg",
+      overlayTitle: "Escape to Farmhouses",
+      overlayDesc: "Rustic charm with open land & fresh air",
     },
     {
       title: "Commercial Spaces",
       description: "Perfect for your business",
-      bgImage: "/public/1A.jpg",
+      bgImage: "/1A.jpg",
+      overlayTitle: "Grow with Commercial Spaces",
+      overlayDesc: "Find the right space to scale your business",
     },
     {
       title: "Vacation Rentals",
       description: "Getaways made easy",
-      bgImage: "/public/1A.jpg",
+      bgImage: "/1A.jpg",
+      overlayTitle: "Plan Vacation Rentals",
+      overlayDesc: "Book cozy stays for your perfect getaway",
     },
   ];
 
@@ -46,13 +58,12 @@ export const ChooseService = () => {
           <h1 className="text-5xl md:text-7xl font-extrabold mb-4 text-white">
             Check Out Our <span className="text-blue-500">Services</span>
           </h1>
-          <h2 className="font-bold text-3xl text-transparent bg-clip-text bg-gradient-to-r from-sky-500 to-pink-400">
+          <h2 className="font-bold text-3xl text-transparent bg-clip-text bg-gradient-to-r from-sky-500 to-pink-400 brightness-125"  >
             Your journey to the perfect home starts here.
           </h2>
         </div>
       </div>
 
-      {/* Services grid */}
       <div className="min-h-screen select-none w-full bg-black text-center flex flex-col items-center justify-center">
         <div>
           <h1 className="text-white text-6xl font-bold mb-8 select-none">
@@ -66,7 +77,7 @@ export const ChooseService = () => {
           ))}
         </div>
       </div>
-      <div className="h-[300px] w-screen bg-black"></div>
+      <div className="h-[200px] w-screen bg-black"></div>
     </>
   );
 };

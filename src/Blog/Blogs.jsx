@@ -76,7 +76,7 @@ export function Blogs() {
         <h2 className="text-5xl brightness-125 md:text-7xl font-extrabold mb-2">
           <span className="text-white">Blogs</span>
         </h2>
-        <h3 className="font-bold text-3xl text-transparent bg-clip-text bg-gradient-to-r from-sky-500 to-pink-400 brightness-150">
+        <h3 className="font-bold text-3xl text-transparent bg-clip-text bg-gradient-to-r from-sky-500 to-pink-400 brightness-125">
           Share Your Journey Of Home Hunting
         </h3>
       </div>
