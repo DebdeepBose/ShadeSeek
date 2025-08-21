@@ -5,11 +5,12 @@ import { Blogs } from "./Blog/Blogs";
 import { Layout } from "./Layout";
 import { LuxApt } from "./PropertyServices/LuxuryApt";
 import { ChooseService } from "./PropertyServices/ChooseService";
-
+import { ScrollToTop } from "./ScrollToTop/ScrollTop";
 
 function App() {
   return (
     <Layout>
+     <ScrollToTop/>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />

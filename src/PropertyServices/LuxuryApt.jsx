@@ -12,15 +12,15 @@ export const LuxApt = () => {
       ></video>
       <div className="absolute inset-0 bg-black opacity-50"></div>
       <div className="absolute inset-0 bg-transparent flex p-4 md:p-0 flex-col justify-center items-center text-center text-white">
-        <h1 className="text-7xl font-bold ">
+        <h1 className="text-5xl md:text-7xl  font-bold ">
           Luxury <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-pink-300">Apartments</span>
         </h1>
-        <p className="mt-4 text-2xl font-semibold opacity-85">
+        <p className="mt-4 text-xl md:text-2xl font-semibold opacity-85">
           Discover The Elegance You Deserve
         </p>
       </div>
     </div>
-    <div className="propCard h-screen w-screen"></div>
+    <div className="propCard h-screen bg-black w-screen"></div>
     </>
   );
 };
