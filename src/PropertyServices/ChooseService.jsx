@@ -8,6 +8,7 @@ export const ChooseService = () => {
       bgImage: "/1A.jpg",
       overlayTitle: "Explore Luxury Villas",
       overlayDesc: "Look up prices, locations & more",
+      link: "/Luxapt"
     },
     {
       title: "City Apartments",
@@ -15,6 +16,7 @@ export const ChooseService = () => {
       bgImage: "/1A.jpg",
       overlayTitle: "Discover City Apartments",
       overlayDesc: "Living in prime locations with top amenities",
+      link: "/Luxapt"
     },
     {
       title: "Beach Houses",
@@ -22,6 +24,7 @@ export const ChooseService = () => {
       bgImage: "/1A.jpg",
       overlayTitle: "Relax in Beach Houses",
       overlayDesc: "Experience stunning views & coastal lifestyle",
+      link: "/Luxapt"
     },
     {
       title: "Farmhouses",
@@ -29,6 +32,7 @@ export const ChooseService = () => {
       bgImage: "/1A.jpg",
       overlayTitle: "Escape to Farmhouses",
       overlayDesc: "Rustic charm with open land & fresh air",
+      link: "/Luxapt"
     },
     {
       title: "Commercial Spaces",
@@ -36,6 +40,7 @@ export const ChooseService = () => {
       bgImage: "/1A.jpg",
       overlayTitle: "Grow with Commercial Spaces",
       overlayDesc: "Find the right space to scale your business",
+      link: "/Luxapt"
     },
     {
       title: "Vacation Rentals",
@@ -43,6 +48,7 @@ export const ChooseService = () => {
       bgImage: "/1A.jpg",
       overlayTitle: "Plan Vacation Rentals",
       overlayDesc: "Book cozy stays for your perfect getaway",
+      link: "/Luxapt"
     },
   ];
 
@@ -71,7 +77,7 @@ export const ChooseService = () => {
           </h1>
         </div>
 
-        <div className="w-full max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-16 gap-y-8 py-3 px-8">
+        <div className="w-full max-w-7xl mt-6 mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-16 gap-y-8 py-3 px-8">
 
           {services.map((s, i) => (
             <ServiceCard key={i} {...s} />

@@ -26,7 +26,7 @@ export const Section6Main = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="p-6 rounded-2xl bg-gradient-to-b from-gray-900 to-gray-800 shadow-lg">
-            <h3 className="text-xl font-bold mb-2">5 Tips for First-Time Buyers</h3>
+            <h3 className="text-xl font-bold mb-2">3 Tips for First-Time Buyers</h3>
             <p className="text-gray-400 mb-4">
               Learn the essentials to make your first home purchase stress-free.
             </p>
@@ -36,7 +36,7 @@ export const Section6Main = () => {
           </div>
 
           <div className="p-6 rounded-2xl bg-gradient-to-b from-gray-900 to-gray-800 shadow-lg">
-            <h3 className="text-xl font-bold mb-2">Top 10 Rental Hacks</h3>
+            <h3 className="text-xl font-bold mb-2">3 Rental Hacks to Save Money</h3>
             <p className="text-gray-400 mb-4">
               Discover how to save money and find the best rental deals.
             </p>

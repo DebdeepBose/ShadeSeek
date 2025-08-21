@@ -66,7 +66,7 @@ export function Blogs() {
   };
 
   return (
-    <div className="w-screen min-h-screen bg-black text-white relative overflow-hidden">
+    <div className="w-screen min-h-screen bg-black text-white relative overflow-hidden select-none">
       <div className="relative h-[100vh] flex flex-col items-center justify-center text-center">
         <div className="absolute top-1/2 left-64 -translate-y-1/2 md:-translate-y-[210px] h-[300px] w-[300px] lg:h-[500px] animate-pulse lg:w-[500px] bg-blue-600 rounded-full blur-3xl opacity-60 mix-blend-screen"></div>
 
