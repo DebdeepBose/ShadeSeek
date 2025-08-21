@@ -2,14 +2,7 @@ export const LuxApt = () => {
   return (
     <>
     <div className="bg-black h-screen w-screen flex select-none items-center justify-center relative">
-      <video
-        src="lux.mp4"
-        autoPlay
-        loop
-        muted
-        playsInline
-        className="h-full w-full object-cover"
-      ></video>
+      <img src="/luxapt.jpg" alt="lux" className="h-screen w-screen" />
       <div className="absolute inset-0 bg-black opacity-50"></div>
       <div className="absolute inset-0 bg-transparent flex p-4 md:p-0 flex-col justify-center items-center text-center text-white">
         <h1 className="text-5xl md:text-7xl  font-bold ">
