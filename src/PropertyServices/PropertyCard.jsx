@@ -7,9 +7,12 @@ export const PropertyCard = ({
   description,
   date,
   price,
+  sqft,
+  status,
+  bysq
 }) => {
   return (
-    <div className="flex flex-col md:flex-row bg-gray-800 text-white rounded-2xl shadow-md border border-gray-700 overflow-hidden hover:scale-[1.02] transition duration-300">
+    <div className="flex select-none flex-col md:flex-row bg-gray-800 text-white rounded-2xl shadow-md border border-gray-700 overflow-hidden hover:scale-[1.02] transition duration-300">
       <img
         src={image}
         alt={location}
@@ -29,12 +32,12 @@ export const PropertyCard = ({
             <div className="flex md:flex-row md:gap-4 gap-2 ">
               <div className="flex flex-col items-start ">
                 <h2 className="text-md font-bold text-pink-400">₹{price}</h2>
-                <h2 className="text-sm font-semibold text-sky-300">₹9,310 /sqft</h2>
+                <h2 className="text-sm font-semibold text-sky-300">₹{bysq}/sqft</h2>
               </div>
               <div className="bg-gray-500 h-10  w-[1px] md:h-12 md:w-[2px] my-2 md:my-0"></div>
               <div className="flex flex-col items-end md:items-start ">
-                <h2 className="text-md font-bold text-pink-400">1,450 sqft</h2>
-                <h2 className="font-semibold text-sky-300">Und.Const</h2>
+                <h2 className="text-md font-bold text-pink-400">{sqft} sqft</h2>
+                <h2 className="font-semibold text-sky-300">{status}</h2>
               </div>
             </div>
           </div>
