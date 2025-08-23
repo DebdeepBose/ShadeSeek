@@ -39,7 +39,7 @@ export const PropertyCard = ({
             </div>
           </div>
 
-          <p className="text-sm mt-2 line-clamp-2">{description}</p>
+          <p className="text-sm mt-2">{description}</p>
 
           <div className="flex flex-wrap gap-2 mb-2">
             {tags.map((tag, i) => (
