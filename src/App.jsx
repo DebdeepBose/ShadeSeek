@@ -7,6 +7,7 @@ import { LuxApt } from "./PropertyServices/LuxuryApt";
 import { ChooseService } from "./PropertyServices/ChooseService";
 import { ScrollToTop } from "./ScrollToTop/ScrollTop";
 import { Rentals } from "./PropertyServices/Rentals";
+import { CommercialSpaces } from "./PropertyServices/CommercialSpaces";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/ChooseService" element={<ChooseService />} />
         <Route path="/Luxapt" element={<LuxApt />} />
         <Route path="/Rentals" element={<Rentals />} />
+        <Route path="/CommercialSpaces" element={<CommercialSpaces />} />
       </Routes>
     </Layout>
   );

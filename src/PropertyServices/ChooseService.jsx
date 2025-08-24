@@ -40,7 +40,7 @@ export const ChooseService = () => {
       bgImage: "/1A.jpg",
       overlayTitle: "Grow with Commercial Spaces",
       overlayDesc: "Find the right space to scale your business",
-      link: "/Luxapt"
+      link: "/CommercialSpaces"
     },
     {
       title: "Vacation Rentals",
