@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { X } from "lucide-react";
-import { Link } from "react-router-dom"; // 👈 import Link
+import { Link } from "react-router-dom"; 
 
 export const ServiceCard = ({ 
   title, 
@@ -33,8 +33,8 @@ export const ServiceCard = ({
           onClick={toggleCard}
         >
           <div>
-            <h1 className="text-white font-bold text-4xl mb-2">{title}</h1>
-            <p className="text-gray-300 font-semibold text-xl">{description}</p>
+            <h1 className="bg-gradient-to-r from-sky-400 to-sky-300 bg-clip-text text-transparent font-bold text-4xl md:text-3xl mb-2">{title}</h1>
+            <p className="text-gray-300 font-semibold text-xl md:text-lg">{description}</p>
           </div>
         </div>
 
@@ -67,7 +67,7 @@ export const ServiceCard = ({
           </p>
 
           <Link to= {link}>
-            <button className="mt-4 px-4 py-2 rounded-3xl border border-transparent bg-gradient-to-r from-pink-500 to-pink-300 hover:shadow-lg active:scale-95 hover:scale-110 transition">
+            <button className="mt-4 px-4 py-2 rounded-3xl border border-transparent bg-gradient-to-r from-pink-500 to-pink-300 hover:shadow-lg active:scale-95 hover:scale-110 transition-all ease-in-out">
               <span className="rounded-lg text-white">Check Out</span>
             </button>
           </Link>

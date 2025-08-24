@@ -5,16 +5,16 @@ export const ChooseService = () => {
     {
       title: "Luxury Apartments",
       description: "Spacious, modern living spaces",
-      bgImage: "/1A.jpg",
-      overlayTitle: "Explore Luxury Villas",
+      bgImage: "/luxMain.jpg",
+      overlayTitle: "Explore Luxury Apartments",
       overlayDesc: "Look up prices, locations & more",
       link: "/Luxapt"
     },
     {
       title: "Rentals",
       description: "Prime locations & amenities",
-      bgImage: "/1A.jpg",
-      overlayTitle: "Discover City Apartments",
+      bgImage: "/rentMain.jpg",
+      overlayTitle: "Discover Affrodable Rentals",
       overlayDesc: "Living in prime locations with top amenities",
       link: "/Rentals"
     },
