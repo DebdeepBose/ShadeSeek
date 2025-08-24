@@ -7,7 +7,6 @@ export const LuxApt = () => {
     {
       id: 1,
       name: "Godrej Golf Links The Suites",
-      BHK: 2,
       location: "Sector 27, Greater Noida",
       description:
         "It is located in greater noida. The project offers 2 bhk apartments at very competitive and affordable price and its a part of a township which spreads across 100 acres. ",
@@ -16,12 +15,12 @@ export const LuxApt = () => {
       image: "/lux1.jpg",
       sqft: 1450,
       status: "Under Construction",
-      bysq: (14000000 / 1450).toFixed(0),
+      secLine: `₹${(14000000 / 1450).toFixed(0)} / sqft`,
+      CenterText: "2 BHK Luxury Apartment in",
     },
     {
       id: 2,
       name: "Mystic Wave",
-      BHK: 2,
       location: "Calangute, Goa",
       price: 20800000,
       description:
@@ -30,26 +29,27 @@ export const LuxApt = () => {
       image: "/lux2.jpg",
       sqft: 1530,
       status: "Available",
-      bysq: (20800000 / 1530).toFixed(0),
+      secLine: `₹${(20800000 / 1530).toFixed(0)} / sqft`,
+      CenterText: "2 BHK Luxury Apartment in",
     },
     {
       id: 3,
       name: "Oberoi Esquire",
-      BHK: 3,
       location: "Goregaon East, Mumbai",
       price: 78900000,
       description:
-        " Offers 3bhk semi-furnished apartment along with two covered car parking space, this complex is also studded with all the ultra-Modern amenities and is appealing with eye-Catching landscaped gardens, beautiful residential locality with good connectivity to public transport facilities. ",
+        " Offers 3bhk semi-furnished apartment along with two covered car parking space, this complex is also studded with all the Ultra-Modern amenities and is appealing with Eye-Catching landscaped gardens, beautiful residential locality with good connectivity to public transport facilities. ",
       date: "10-08-2025",
       image: "/lux3.jpg",
       sqft: 2190,
       status: "Available",
-      bysq: (78900000 / 2190).toFixed(0),
+      secLine: `₹${(78900000 / 2190).toFixed(0)} / sqft`,
+      CenterText: "3 BHK Luxury Apartment in",
     },
+
     {
       id: 4,
       name: "Godrej Avenue Eleven",
-      BHK: 4,
       location: "Mahalaxmi, Mumbai",
       price: 110400000,
       date: "04-02-2025",
@@ -58,12 +58,12 @@ export const LuxApt = () => {
       image: "/lux4.jpg",
       sqft: 2345,
       status: "Partially RTM",
-      bysq: (110400000 / 2345).toFixed(0),
+      secLine: `₹${(110400000 / 2345).toFixed(0)} / sqft`,
+      CenterText: "4 BHK Luxury Apartment in",
     },
     {
       id: 5,
       name: "PS Navyom",
-      BHK: 3,
       location: "New Alipore, Kolkata",
       price: 38700000,
       description:
@@ -72,12 +72,12 @@ export const LuxApt = () => {
       image: "/lux5.jpg",
       sqft: 1913,
       status: "Available",
-      bysq: (38700000 / 1913).toFixed(0),
+      secLine: `₹${(38700000 / 1913).toFixed(0)} / sqft`,
+      CenterText: "3 BHK Luxury Apartment in",
     },
     {
       id: 6,
       name: "The Adwaith By Sanjeevini",
-      BHK: 2,
       location: "Gunjur, Near Varthur, Bangalore",
       price: 27900000,
       description:
@@ -86,12 +86,13 @@ export const LuxApt = () => {
       image: "/lux6.jpg",
       sqft: 1320,
       status: "New Launch",
-      bysq: (27900000 / 1320).toFixed(0),
+      secLine: `₹${(27900000 / 1320).toFixed(0)} / sqft`,
+      CenterText: "2 BHK Luxury Apartment in",
     },
+
     {
       id: 7,
       name: "Rajparis Blue Jewel",
-      BHK: 3,
       location: "Muttukadu, ECR",
       price: 21500000,
       description:
@@ -100,12 +101,12 @@ export const LuxApt = () => {
       image: "/lux7.jpg",
       sqft: 1911,
       status: "Available",
-      bysq: (21500000 / 1911).toFixed(0),
+      secLine: `₹${(21500000 / 1911).toFixed(0)} / sqft`,
+      CenterText: "3 BHK Luxury Apartment in",
     },
     {
       id: 8,
       name: "Marvellous",
-      BHK: 4,
       location: "T Nagar, Chennai",
       price: 77000000,
       description:
@@ -114,12 +115,13 @@ export const LuxApt = () => {
       image: "/lux8.jpg",
       sqft: 2000,
       status: "Under Construction",
-      bysq: (77000000 / 2000).toFixed(0),
+      secLine: `₹${(77000000 / 2000).toFixed(0)} / sqft`,
+      CenterText: "4 BHK Luxury Apartment in",
     },
+
     {
       id: 9,
       name: "A2A Homeland",
-      BHK: 2,
       location: "Kukatpally, Hyderabad",
       price: 19500000,
       description:
@@ -128,12 +130,12 @@ export const LuxApt = () => {
       image: "/lux9.jpg",
       sqft: 1460,
       status: "Available",
-      bysq: (19500000 / 1460).toFixed(0),
+      secLine: `₹${(19500000 / 1460).toFixed(0)} / sqft`, 
+      CenterText: "2 BHK Luxury Apartment in",
     },
     {
       id: 10,
       name: "Signature Global Daxin Vistas",
-      BHK: 3,
       location: "Sohna, Gurgaon",
       price: 21000000,
       description:
@@ -142,7 +144,8 @@ export const LuxApt = () => {
       image: "/lux10.jpg",
       sqft: 2100,
       status: "New Launch",
-      bysq: (21000000 / 2100).toFixed(0),
+      secLine: `₹${(21000000 / 2100).toFixed(0)} / sqft`, 
+      CenterText: "3 BHK Luxury Apartment in",
     },
   ]);
 

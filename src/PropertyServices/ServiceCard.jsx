@@ -38,7 +38,6 @@ export const ServiceCard = ({
           </div>
         </div>
 
-        {/* Overlay */}
         <div
           className={`
             absolute inset-0 
@@ -51,7 +50,7 @@ export const ServiceCard = ({
               : 'translate-y-6 opacity-0 scale-95 pointer-events-none'}
           `}
         >
-          {/* Close button */}
+
           <button
             className="absolute top-3 right-3 p-1 rounded-full hover:bg-white/10"
             onClick={toggleCard}
@@ -67,7 +66,6 @@ export const ServiceCard = ({
             {overlayDesc}
           </p>
 
-          {/* 👇 Only this button routes */}
           <Link to= {link}>
             <button className="mt-4 px-4 py-2 rounded-3xl border border-transparent bg-gradient-to-r from-pink-500 to-pink-300 hover:shadow-lg active:scale-95 hover:scale-110 transition">
               <span className="rounded-lg text-white">Check Out</span>

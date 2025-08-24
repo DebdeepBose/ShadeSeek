@@ -1,7 +1,6 @@
 export const PropertyCard = ({
   image,
   name,
-  BHK,
   location,
   tags = [],
   description,
@@ -9,7 +8,8 @@ export const PropertyCard = ({
   price,
   sqft,
   status,
-  bysq
+  secLine,
+  CenterText,
 }) => {
   return (
     <div className="flex select-none flex-col md:flex-row bg-gray-800 text-white rounded-2xl shadow-md border border-gray-700 overflow-hidden hover:scale-[1.02] transition duration-300">
@@ -25,14 +25,14 @@ export const PropertyCard = ({
             <div>
               <h3 className="text-lg font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-200 to-pink-100">{name}</h3>
               <h3 className="text-sm md:text-md font-semibold text-transparent bg-clip-text bg-gradient-to-r from-sky-200 to-sky-100">
-                {BHK} BHK Luxury Apartment in {location}
+                 {CenterText} {location}
               </h3>
             </div>
 
             <div className="flex md:flex-row md:gap-4 gap-2 ">
               <div className="flex flex-col items-start ">
                 <h2 className="text-md font-bold text-pink-400">₹{price}</h2>
-                <h2 className="text-sm font-semibold text-sky-300">₹{bysq}/sqft</h2>
+                <h2 className="text-sm font-semibold text-sky-300">{secLine}</h2>
               </div>
               <div className="bg-gray-500 h-10  w-[1px] md:h-12 md:w-[2px] my-2 md:my-0"></div>
               <div className="flex flex-col items-end md:items-start ">

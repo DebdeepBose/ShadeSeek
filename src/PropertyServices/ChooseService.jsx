@@ -3,7 +3,7 @@ import { ServiceCard } from "./ServiceCard";
 export const ChooseService = () => {
   const services = [
     {
-      title: "Luxury Villas",
+      title: "Luxury Apartments",
       description: "Spacious, modern living spaces",
       bgImage: "/1A.jpg",
       overlayTitle: "Explore Luxury Villas",
@@ -11,12 +11,12 @@ export const ChooseService = () => {
       link: "/Luxapt"
     },
     {
-      title: "City Apartments",
+      title: "Rentals",
       description: "Prime locations & amenities",
       bgImage: "/1A.jpg",
       overlayTitle: "Discover City Apartments",
       overlayDesc: "Living in prime locations with top amenities",
-      link: "/Luxapt"
+      link: "/Rentals"
     },
     {
       title: "Beach Houses",

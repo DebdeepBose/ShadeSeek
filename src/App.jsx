@@ -6,6 +6,7 @@ import { Layout } from "./Layout";
 import { LuxApt } from "./PropertyServices/LuxuryApt";
 import { ChooseService } from "./PropertyServices/ChooseService";
 import { ScrollToTop } from "./ScrollToTop/ScrollTop";
+import { Rentals } from "./PropertyServices/Rentals";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/ChooseService" element={<ChooseService />} />
         <Route path="/Luxapt" element={<LuxApt />} />
+        <Route path="/Rentals" element={<Rentals />} />
       </Routes>
     </Layout>
   );
