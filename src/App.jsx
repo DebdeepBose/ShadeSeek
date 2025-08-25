@@ -8,6 +8,9 @@ import { ChooseService } from "./PropertyServices/ChooseService";
 import { ScrollToTop } from "./ScrollToTop/ScrollTop";
 import { Rentals } from "./PropertyServices/Rentals";
 import { CommercialSpaces } from "./PropertyServices/CommercialSpaces";
+import { BeachHouse } from "./PropertyServices/BeachHouse";
+import { PayingGuests } from "./PropertyServices/PayingGuests";
+import { FarmHouse } from "./PropertyServices/FarmHouse";
 
 function App() {
   return (
@@ -21,6 +24,9 @@ function App() {
         <Route path="/Luxapt" element={<LuxApt />} />
         <Route path="/Rentals" element={<Rentals />} />
         <Route path="/CommercialSpaces" element={<CommercialSpaces />} />
+        <Route path="/BeachHouse" element={<BeachHouse />} />
+        <Route path="/PayingGuests" element={<PayingGuests />} />
+        <Route path="/FarmHouse" element={<FarmHouse />} />
       </Routes>
     </Layout>
   );

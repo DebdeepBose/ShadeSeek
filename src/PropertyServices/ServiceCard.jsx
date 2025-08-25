@@ -18,7 +18,7 @@ export const ServiceCard = ({
 
   return (
     <div
-      className="relative inset-0 flex hover:scale-105 transition-all duration-300 ease-out flex-auto justify-center rounded-2xl items-center flex-col bg-black"
+      className=" relative inset-0 flex hover:scale-105 transition-all duration-300 ease-out flex-auto justify-center rounded-2xl items-center flex-col bg-black"
       style={{
         backgroundImage: `url(${bgImage})`,
         backgroundSize: "cover",

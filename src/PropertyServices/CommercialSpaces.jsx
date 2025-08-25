@@ -1,6 +1,10 @@
 import { useState } from "react";
+import { useLayoutEffect, useRef } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { PropertyList } from "./PropertyList";
 import { PropertySidePanel } from "./SidePanelProp";
+gsap.registerPlugin(ScrollTrigger);
 
 export const CommercialSpaces = () => {
   const [properties, setProperties] = useState([
@@ -147,9 +151,46 @@ export const CommercialSpaces = () => {
       CenterText: "Commercial Office for sale in",
     },
   ]);
-
+   const root = useRef(null);
+  
+    useLayoutEffect(() => {
+      const ctx = gsap.context(() => {
+        const base = {
+          x: -60,
+          autoAlpha: 0,
+          duration: 0.8,
+          ease: "power2.out",
+          immediateRender: true,
+        };
+  
+        gsap.utils.toArray(".fade-slide").forEach((el) => {
+          gsap.from(el, {
+            ...base,
+            scrollTrigger: {
+              trigger: el,
+              start: "top 95%",
+              toggleActions: "play none play reverse",
+              immediateRender: true,
+            },
+          });
+        });
+  
+        gsap.utils.toArray(".service-card").forEach((el, i) => {
+          gsap.from(el, {
+            ...base,
+            delay: i * 0.08,
+            scrollTrigger: {
+              trigger: el,
+              start: "top 95%",
+              toggleActions: "play none play reverse",
+            },
+          });
+        });
+      }, root);
+      return () => ctx.revert();
+    }, []);
   return (
-    <>
+    <div ref={root}>
       <div className="bg-black h-screen w-screen flex select-none items-center justify-center relative">
         <video
           src="ComSpa.mp4"
@@ -160,7 +201,7 @@ export const CommercialSpaces = () => {
           className="h-full w-full object-cover"
         ></video>
         <div className="absolute inset-0 bg-black opacity-50"></div>
-        <div className="absolute inset-0 bg-transparent flex p-4 md:p-0 flex-col justify-center items-center text-center text-white">
+        <div className="fade-slide absolute inset-0 bg-transparent flex p-4 md:p-0 flex-col justify-center items-center text-center text-white">
           <h1 className="text-5xl md:text-7xl  font-bold ">
             Commercial{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-pink-300">
@@ -182,7 +223,7 @@ export const CommercialSpaces = () => {
         <h3 className="text-gray-300 mb-8 text-center text-lg font-semibold pl-1">
           Choose, Filter And Select Properties Accordingly
         </h3>
-        <div className="flex flex-col md:flex-row w-full h-full gap-y-4 md:gap-x-4">
+        <div className="flex flex-col md:flex-row w-full h-full gap-y-4 md:gap-x-4 fade-slide">
           <PropertySidePanel
             setProperties={setProperties}
             properties={properties}
@@ -190,6 +231,6 @@ export const CommercialSpaces = () => {
           <PropertyList properties={properties} />
         </div>
       </div>
-    </>
+    </div>
   );
 };

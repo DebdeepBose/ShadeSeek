@@ -21,3 +21,8 @@ input[type="number"]::-webkit-inner-spin-button {
   background-position: center;
   background-size: 4px;
 }
+
+.service-card {
+  opacity: 0;
+  transform: translateX(-60px); /* match your gsap.from */
+}
