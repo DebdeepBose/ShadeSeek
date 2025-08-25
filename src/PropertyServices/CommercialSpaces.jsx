@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { useLayoutEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { PropertyList } from "./PropertyList";
@@ -18,6 +17,7 @@ export const CommercialSpaces = () => {
       date: "02-09-2024",
       image: "/Coms1.jpg",
       sqft: 662,
+      tags: ["Sale","Pre-Lease"],
       status: "Available",
       secLine: `₹${(27100000 / 662).toFixed(0)} / sqft`,
       CenterText: "Commercial Space for sale in",
@@ -32,6 +32,7 @@ export const CommercialSpaces = () => {
       date: "07-01-2025",
       image: "/Coms2.jpg",
       sqft: 455,
+      tags: ["Sale","Ready To Move"],
       status: "Available",
       secLine: `₹${(11000000 / 455).toFixed(0)} / sqft`,
       CenterText: "Commercial Space for sale in",
@@ -46,6 +47,7 @@ export const CommercialSpaces = () => {
       date: "28-06-2025",
       image: "/Coms3.jpg",
       sqft: 1863,
+      tags: ["Sale","Under Construction"],
       status: "Under Cons.",
       secLine: `₹${(44000000 / 1863).toFixed(0)} / sqft`,
       CenterText: "Commercial Space for sale in",
@@ -60,6 +62,7 @@ export const CommercialSpaces = () => {
       date: "12-08-2024",
       image: "/Coms4.jpg",
       sqft: 1285,
+      tags: ["Sale","Pre-Lease"],
       status: "Available",
       secLine: `₹${(23800000 / 1285).toFixed(0)} / sqft`,
       CenterText: "Commercial Space for sale in",
@@ -75,6 +78,7 @@ export const CommercialSpaces = () => {
       date: "18-08-2024",
       image: "/Coms5.jpg",
       sqft: 2300,
+      tags: ["Sale","Ready To Move"],
       status: "Available",
       secLine: `₹${(20600000 / 2300).toFixed(0)} / sqft`,
       CenterText: "Commercial Space for sale in",
@@ -90,6 +94,7 @@ export const CommercialSpaces = () => {
       date: "21-08-2024",
       image: "/Coms6.jpg",
       sqft: 45000,
+      tags: ["Sale","Brand New"],
       status: "Available",
       secLine: `₹${(99800000 / 45000).toFixed(0)} / sqft`,
       CenterText: "Commercial Space for sale in",
@@ -104,6 +109,7 @@ export const CommercialSpaces = () => {
       date: "20-07-2025",
       image: "/Coms7.jpg",
       sqft: 1823,
+      tags: ["Sale"],
       status: "Available",
       secLine: `₹${(23900000 / 1823).toFixed(0)} / sqft`,
       CenterText: "Commercial Office for sale in",
@@ -118,6 +124,7 @@ export const CommercialSpaces = () => {
       date: "15-08-2023",
       image: "/Coms8.jpg",
       sqft: 900,
+      tags: ["Sale","Low End"],
       status: "Available",
       secLine: `₹${(4466000 / 900).toFixed(0)} / sqft`,
       CenterText: "Commercial Office for sale in",
@@ -132,6 +139,7 @@ export const CommercialSpaces = () => {
       date: "05-07-2023",
       image: "/Coms9.jpg",
       sqft: 7361,
+      tags: ["Sale","Ultra High End"],
       status: "Available",
       secLine: `₹${(620000000 / 7361).toFixed(0)} / sqft`,
       CenterText: "Property for sale in",
@@ -146,51 +154,15 @@ export const CommercialSpaces = () => {
       date: "10-08-2025",
       image: "/Coms10.jpg",
       sqft: 1903,
+      tags: ["Sale"],
       status: "Available",
       secLine: `₹${(28500000 / 1903).toFixed(0)} / sqft`,
       CenterText: "Commercial Office for sale in",
     },
   ]);
-   const root = useRef(null);
-  
-    useLayoutEffect(() => {
-      const ctx = gsap.context(() => {
-        const base = {
-          x: -60,
-          autoAlpha: 0,
-          duration: 0.8,
-          ease: "power2.out",
-          immediateRender: true,
-        };
-  
-        gsap.utils.toArray(".fade-slide").forEach((el) => {
-          gsap.from(el, {
-            ...base,
-            scrollTrigger: {
-              trigger: el,
-              start: "top 95%",
-              toggleActions: "play none play reverse",
-              immediateRender: true,
-            },
-          });
-        });
-  
-        gsap.utils.toArray(".service-card").forEach((el, i) => {
-          gsap.from(el, {
-            ...base,
-            delay: i * 0.08,
-            scrollTrigger: {
-              trigger: el,
-              start: "top 95%",
-              toggleActions: "play none play reverse",
-            },
-          });
-        });
-      }, root);
-      return () => ctx.revert();
-    }, []);
+   
   return (
-    <div ref={root}>
+    <>
       <div className="bg-black h-screen w-screen flex select-none items-center justify-center relative">
         <video
           src="ComSpa.mp4"
@@ -231,6 +203,6 @@ export const CommercialSpaces = () => {
           <PropertyList properties={properties} />
         </div>
       </div>
-    </div>
+    </>
   );
 };
