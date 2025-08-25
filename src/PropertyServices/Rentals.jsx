@@ -14,6 +14,7 @@ export const Rentals = () => {
       date: "04-09-2023",
       image: "/ren1.jpg",
       sqft: 1000,
+      tags: ["Rent","Sale"],
       status: "Available",
       secLine: "per Month",
       CenterText: "2 BHK Flat for rent in",

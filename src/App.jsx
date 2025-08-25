@@ -11,6 +11,7 @@ import { CommercialSpaces } from "./PropertyServices/CommercialSpaces";
 import { BeachHouse } from "./PropertyServices/BeachHouse";
 import { PayingGuests } from "./PropertyServices/PayingGuests";
 import { FarmHouse } from "./PropertyServices/FarmHouse";
+import { PropertyDetails } from "./PropertyServices/PropertyDetails";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <Route path="/BeachHouse" element={<BeachHouse />} />
         <Route path="/PayingGuests" element={<PayingGuests />} />
         <Route path="/FarmHouse" element={<FarmHouse />} />
+        <Route path="/property/:id" element={<PropertyDetails />} />
       </Routes>
     </Layout>
   );
