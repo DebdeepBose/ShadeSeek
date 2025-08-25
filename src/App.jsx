@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import { HomePage } from "./HomePage";
-import { AboutPage } from "./About/About";
+import { AboutPage } from "./About/AboutPage";
 import { Blogs } from "./Blog/Blogs";
 import { Layout } from "./Layout";
 import { LuxApt } from "./PropertyServices/LuxuryApt";
@@ -16,10 +16,10 @@ import { PropertyDetails } from "./PropertyServices/PropertyDetails";
 function App() {
   return (
     <Layout>
-     <ScrollToTop/>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/about" element={<AboutPage />} />
+        <Route path="/AboutPage" element={<AboutPage />} />
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/ChooseService" element={<ChooseService />} />
         <Route path="/Luxapt" element={<LuxApt />} />

@@ -9,19 +9,19 @@ export const SidePanel = ({ isPanelOpen, onLinkClick }) => {
         <div className="w-[200px] h-[400px] rounded-lg flex flex-col gap-6 items-center ">
           <a
             className="group mt-4 w-[150px] text-center py-2 rounded-lg transition-colors duration-300 text-sky-600 hover:text-white hover:bg-sky-600"
-            href="#about"
+            href="#home"
             onClick={onLinkClick}>
             Home
           </a>
-          <a
+          <Link to="/AboutPage"
             className="group w-[150px] text-center py-2 rounded-lg transition-colors duration-300 text-pink-400 hover:text-white hover:bg-pink-400"
-            href="#services"
+            href="#about"
             onClick={onLinkClick}>
             About
-          </a>
+          </Link >
           <Link to="/blogs"
             className="group w-[150px] text-center py-2 rounded-lg transition-colors duration-300 text-sky-600 hover:text-white hover:bg-sky-600"
-            href="#contact"
+            href="#blogs"
             onClick={onLinkClick}>
             Blogs
           </Link >
