@@ -69,9 +69,9 @@ export const PropertyCard = (props) => {
           </div>
         </div>
         <div className="flex-row flex items-end justify-between">
-          <p className="text-blue-500 text-sm mt-2 md:mt-0">Posted on {date}</p>
+          <p className="text-blue-500 text-sm mt-3 md:mt-0">Posted on {date}</p>
           <Link to={`/property/${id}`} state={props}>
-            <button className="mr-4 bg-gray-800 border-2 border-sky-500 text-sky-500 text-sm font-semibold py-1 md:py-1 px-[12px] hover:scale-110 hover:bg-sky-500 hover:text-white active:scale-90 transition-all duration-200 rounded-xl shadow-md hover:opacity-90">
+            <button className="mr-4 bg-gray-800 border-2 border-sky-500 text-sky-500 text-sm font-semibold py-1 md:py-1 px-[12px] hover:scale-110 hover:bg-sky-500 hover:text-white active:scale-90 transition-all duration-200 rounded-xl shadow-md hover:opacity-90 mt-1 md:mt-0">
               View
             </button>
           </Link>
