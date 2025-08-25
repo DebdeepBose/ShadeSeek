@@ -21,7 +21,7 @@ export const PropertyDetails = () => {
           <img
             src={property.image}
             alt={property.name}
-            className="w-full  h-[350px] md:h-[450px] object-cover rounded-3xl border-[3px] border-blue-700 "
+            className="w-full  h-[350px] md:h-[450px] object-cover rounded-3xl border-r-[3px] border-b-[3px] border-sky-400 "
           />
           <div className="mt-6 px-4">
             <h1 className="text-4xl font-bold text-pink-300">
