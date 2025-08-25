@@ -17,11 +17,11 @@ export const PropertyDetails = () => {
 
     <div className="md:min-h-screen bg-black text-white pt-12 md:pt-28 pb-12 select-none">
       <div className="w-full md:flex md:gap-8 md:px-10">
-        <div className="md:w-3/5">
+        <div className="md:w-3/5 p-4 md:p-0">
           <img
             src={property.image}
             alt={property.name}
-            className="w-full p-4 md:p-0 h-[350px] md:h-[450px] object-cover rounded-3xl border-[3px] border-blue-700 "
+            className="w-full  h-[350px] md:h-[450px] object-cover rounded-3xl border-[3px] border-blue-700 "
           />
           <div className="mt-6 px-4">
             <h1 className="text-4xl font-bold text-pink-300">
