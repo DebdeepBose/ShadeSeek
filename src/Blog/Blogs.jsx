@@ -1,49 +1,10 @@
 import { useState } from "react";
 import BlogList from "./BlogList";
 import BlogForm from "./BlogForm";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useLayoutEffect, useRef } from "react";
+
 
 export function Blogs() {
-  const root = useRef(null);
-
-  useLayoutEffect(() => {
-    const ctx = gsap.context(() => {
-      const base = {
-        x: -60,
-        autoAlpha: 0,
-        duration: 0.6,
-        ease: "power2.out",
-        immediateRender: true,
-      };
-
-      gsap.utils.toArray(".fade-slide").forEach((el) => {
-        gsap.from(el, {
-          ...base,
-          scrollTrigger: {
-            trigger: el,
-            start: "top 95%",
-            toggleActions: "play none play reverse",
-            immediateRender: true,
-          },
-        });
-      });
-
-      gsap.utils.toArray(".service-card").forEach((el, i) => {
-        gsap.from(el, {
-          ...base,
-          delay: i * 0.08,
-          scrollTrigger: {
-            trigger: el,
-            start: "top 95%",
-            toggleActions: "play none play reverse",
-          },
-        });
-      });
-    }, root);
-    return () => ctx.revert();
-  }, []);
+  
   const [blogs, setBlogs] = useState([
     {
       id: 1,
@@ -107,7 +68,7 @@ export function Blogs() {
   };
 
   return (
-    <div ref={root}>
+    <>
     <div className="relative w-screen min-h-screen bg-black text-white overflow-hidden select-none">
       <div className="relative h-[100vh] flex flex-col items-center justify-center text-center">
         <div className="absolute top-1/2 left-64 -translate-y-1/2 md:-translate-y-[210px] h-[300px] w-[300px] lg:h-[500px] animate-pulse lg:w-[500px] bg-blue-600 rounded-full blur-3xl opacity-60 mix-blend-screen"></div>
@@ -136,6 +97,6 @@ export function Blogs() {
         />
       </div>
     </div>
-    </div>
+    </>
   );
 }

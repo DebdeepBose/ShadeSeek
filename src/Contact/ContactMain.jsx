@@ -1,49 +1,11 @@
-import gsap from "gsap";
-import { useLayoutEffect, useRef } from "react";
+
 import { ContactBox } from "./ContactBox";
 
 export function ContactPage() {
-  const root = useRef(null);
-
-  useLayoutEffect(() => {
-    const ctx = gsap.context(() => {
-      const base = {
-        x: -60,
-        autoAlpha: 0,
-        duration: 0.6,
-        ease: "power2.out",
-        immediateRender: true,
-      };
-
-      gsap.utils.toArray(".fade-slide").forEach((el) => {
-        gsap.from(el, {
-          ...base,
-          scrollTrigger: {
-            trigger: el,
-            start: "top 95%",
-            toggleActions: "play none play reverse",
-            immediateRender: true,
-          },
-        });
-      });
-
-      gsap.utils.toArray(".service-card").forEach((el, i) => {
-        gsap.from(el, {
-          ...base,
-          delay: i * 0.08,
-          scrollTrigger: {
-            trigger: el,
-            start: "top 95%",
-            toggleActions: "play none play reverse",
-          },
-        });
-      });
-    }, root);
-    return () => ctx.revert();
-  }, []);
+  
 
   return (
-    <div ref={root}>
+    <>
       <div className="relative w-screen min-h-screen bg-black text-white overflow-hidden select-none">
    
         <div className="relative h-[100vh] flex flex-col items-center justify-center text-center">
@@ -63,6 +25,6 @@ export function ContactPage() {
           <ContactBox />
         </div>
       </div>
-    </div>
+    </>
   );
 }

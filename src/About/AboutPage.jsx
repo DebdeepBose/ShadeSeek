@@ -1,53 +1,14 @@
-import { useLayoutEffect, useRef } from "react";
+
 import { Link } from "react-router-dom";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Home, Layers, Headphones } from "lucide-react";
 
-gsap.registerPlugin(ScrollTrigger);
+
 
 export const AboutPage = () => {
-  const root = useRef(null);
-
-  useLayoutEffect(() => {
-    const ctx = gsap.context(() => {
-      const base = {
-        x: -60,
-        autoAlpha: 0,
-        duration: 0.6,
-        ease: "power2.out",
-        immediateRender: true,
-      };
-
-      gsap.utils.toArray(".fade-slide").forEach((el) => {
-        gsap.from(el, {
-          ...base,
-          scrollTrigger: {
-            trigger: el,
-            start: "top 95%",
-            toggleActions: "play none play reverse",
-            immediateRender: true,
-          },
-        });
-      });
-
-      gsap.utils.toArray(".service-card").forEach((el, i) => {
-        gsap.from(el, {
-          ...base,
-          delay: i * 0.08,
-          scrollTrigger: {
-            trigger: el,
-            start: "top 95%",
-            toggleActions: "play none play reverse",
-          },
-        });
-      });
-    }, root);
-    return () => ctx.revert();
-  }, []);
+  
 
   return (
-    <div ref={root}>
+    <>
 
       <div className="relative h-screen w-screen flex flex-col items-center select-none justify-center bg-black overflow-hidden">
         <div className="absolute inset-0 flex items-center justify-center">
@@ -114,6 +75,6 @@ export const AboutPage = () => {
           Check Out Services
         </Link>
       </div>
-    </div>
+    </>
   );
 };
