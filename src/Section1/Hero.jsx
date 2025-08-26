@@ -32,7 +32,9 @@ export const Hero = () => {
       </h2>
 
       <h3 className="relative z-10 mt-4 animate-pulse [animation-duration:1.2s] text-blue-500 rotate-45 text-2xl font-bold cursor-pointer hover:scale-110 transition-all duration-100 active:scale-95">
-        <FaLocationArrow />
+        <FaLocationArrow onClick={() =>
+                    window.scrollTo({ top: 700, behavior: "smooth" })
+                  } />
       </h3>
     </section>
   );
