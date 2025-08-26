@@ -1,12 +1,12 @@
 import { Nav } from "./Nav";
 import { Loader } from "./Burger";
-import { Explore } from "./Explore";
+import { LogOut } from "./LogOut";
 
 export const Header = ({
   isMobile,
   isPanelOpen,
   onBurgerClick,
-  onExploreClick,
+  onLogOutClick,
 }) => {
   return (
     <div
@@ -33,10 +33,8 @@ export const Header = ({
       )}
 
       {!isMobile && (
-        <div  onClick={() =>
-                    window.scrollTo({ top: 1400, behavior: "smooth" })
-                  }>
-          <Explore onExploreClick={onExploreClick}  />
+        <div >
+          <LogOut onLogOutClick={onLogOutClick}  />
         </div>
       )}
     </div>

@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import { HomePage } from "./HomePage";
 import { AboutPage } from "./About/AboutPage";
 import { Blogs } from "./Blog/Blogs";
@@ -13,27 +13,31 @@ import { PayingGuests } from "./PropertyServices/PayingGuests";
 import { FarmHouse } from "./PropertyServices/FarmHouse";
 import { PropertyDetails } from "./PropertyServices/PropertyDetails";
 import { ContactPage } from "./Contact/ContactMain";
-
+import LoginForm from "./LoginPageComponents/LoginForm";
 
 function App() {
   return (
-    <Layout>
+    <>
       <ScrollToTop />
       <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/AboutPage" element={<AboutPage />} />
-        <Route path="/blogs" element={<Blogs />} />
-        <Route path="/ChooseService" element={<ChooseService />} />
-        <Route path="/Luxapt" element={<LuxApt />} />
-        <Route path="/Rentals" element={<Rentals />} />
-        <Route path="/CommercialSpaces" element={<CommercialSpaces />} />
-        <Route path="/BeachHouse" element={<BeachHouse />} />
-        <Route path="/PayingGuests" element={<PayingGuests />} />
-        <Route path="/FarmHouse" element={<FarmHouse />} />
-        <Route path="/property/:id" element={<PropertyDetails />} />
-        <Route path="/ContactPage" element={<ContactPage/>} />
+        <Route path="/" element={<LoginForm />} />
+        <Route element={<Layout />}>
+          <Route path="/home" element={<HomePage />} />
+          <Route path="/AboutPage" element={<AboutPage />} />
+          <Route path="/blogs" element={<Blogs />} />
+          <Route path="/ChooseService" element={<ChooseService />} />
+          <Route path="/Luxapt" element={<LuxApt />} />
+          <Route path="/Rentals" element={<Rentals />} />
+          <Route path="/CommercialSpaces" element={<CommercialSpaces />} />
+          <Route path="/BeachHouse" element={<BeachHouse />} />
+          <Route path="/PayingGuests" element={<PayingGuests />} />
+          <Route path="/FarmHouse" element={<FarmHouse />} />
+          <Route path="/property/:id" element={<PropertyDetails />} />
+          <Route path="/ContactPage" element={<ContactPage />} />
+        </Route>
+
       </Routes>
-    </Layout>
+    </>
   );
 }
 

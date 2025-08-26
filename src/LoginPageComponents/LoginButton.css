@@ -1,43 +1,43 @@
-a span {
+.login-btn span {
   position: absolute;
   display: block;
 }
 
-a span:nth-child(1) {
+.login-btn span:nth-child(1) {
   top: 0;
   left: -100%;
   width: 100%;
   height: 2px;
-  background: linear-gradient(90deg, transparent, #ffffff);
+  background: linear-gradient(90deg, transparent, rgb(14 165 233 / 1));
   animation: btn-anim1 1.5s linear infinite;
 }
 
-a span:nth-child(2) {
+.login-btn span:nth-child(2) {
   top: -100%;
   right: 0;
   width: 2px;
   height: 100%;
-  background: linear-gradient(180deg, transparent, #ffffff);
+  background: linear-gradient(180deg, transparent, rgb(14 165 233 / 1));
   animation: btn-anim2 1.5s linear infinite;
   animation-delay: 0.375s;
 }
 
-a span:nth-child(3) {
+.login-btn span:nth-child(3) {
   bottom: 0;
   right: -100%;
   width: 100%;
   height: 2px;
-  background: linear-gradient(270deg, transparent, #ffffff);
+  background: linear-gradient(270deg, transparent, rgb(14 165 233 / 1));
   animation: btn-anim3 1.5s linear infinite;
   animation-delay: 0.75s;
 }
 
-a span:nth-child(4) {
+.login-btn span:nth-child(4) {
   bottom: -100%;
   left: 0;
   width: 2px;
   height: 100%;
-  background: linear-gradient(360deg, transparent, #ffffff);
+  background: linear-gradient(360deg, transparent, rgb(14 165 233 / 1));
   animation: btn-anim4 1.5s linear infinite;
   animation-delay: 1.125s;
 }

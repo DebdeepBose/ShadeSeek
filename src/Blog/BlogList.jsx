@@ -1,4 +1,3 @@
-import React from 'react';
 
 const BlogList = ({ blogs, handleEdit, handleDelete }) => {
   return (

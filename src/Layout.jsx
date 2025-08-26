@@ -4,10 +4,11 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollSmoother } from "gsap/ScrollSmoother";
 import { Header } from "./NavBar/Header";
 import { SidePanel } from "./NavBar/SidePanel";
+import { Outlet } from "react-router-dom";   
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
-export function Layout({ children }) {
+export function Layout() {
   const section2Ref = useRef();
   const smootherRef = useRef(null);
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
@@ -57,7 +58,9 @@ export function Layout({ children }) {
         />
       </div>
 
-      <div id="smooth-content">{children}</div>
+      <div id="smooth-content">
+        <Outlet />
+      </div>
 
       <SidePanel isPanelOpen={isPanelOpen} onLinkClick={handleBurgerClick} />
     </div>
