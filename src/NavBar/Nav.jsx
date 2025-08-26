@@ -60,8 +60,7 @@ export function Nav() {
               </li>
             </Link>
 
-            {/* Contact Link */}
-            <Link to="/">
+            <Link to="/ContactPage">
               <li
                 className="flex items-center gap-2 px-1 sm:px-2 text-white/80 transition-transform hover:scale-125 hover:text-[#f5d2fb]"
                 data-tooltip-id="my-tooltip"

@@ -20,13 +20,13 @@ export const Hero = () => {
         Find{" "}
         <span className="text-pink-500">
           <Typewriter
-            words={["Properties", "Rentals", "Hostels", "Hotels"]}
+            words={["Properties", "Rentals", "Beach House", "Farm House", "Paying Guests"]}
             loop={0}
             cursor
             cursorStyle="|"
-            typeSpeed={80}
-            deleteSpeed={50}
-            delaySpeed={1500}
+            typeSpeed={70}
+            deleteSpeed={40}
+            delaySpeed={1300}
           />
         </span>
       </h2>

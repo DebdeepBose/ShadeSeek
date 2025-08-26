@@ -2,7 +2,7 @@ export const PropertyCard = ({ property }) => {
   return (
     <div
       key={property.id}
-      className="bg-pink-400/10 backdrop-blur-md border border-white/10 rounded-2xl overflow-hidden shadow-lg hover:scale-[1.02] transition-transform"
+      className="bg-pink-400/10 backdrop-blur-md border border-white/10 rounded-2xl overflow-hidden shadow-lg hover:scale-[1.05] transition-all duration-200"
       style={{
         backgroundColor: "#141428",
         background: "linear-gradient(135deg, #0099ff, #ff0099)",

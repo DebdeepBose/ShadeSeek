@@ -1,188 +1,54 @@
 {
-    "spotlight": [
-        {
-            "id": 1,
-            "title": "RT Premier 1",
-            "bedrooms": 2,
-            "bathrooms": 2,
-            "size": "1600 sqft",
-            "price": "₹ 89.67 Lacs - 1.47 Cr",
-            "tag": "Featured",
-            "images": [
-                "/1A.jpg",
-                "/1B.jpg",
-                "/1C.jpg"
-            ]
-        },
-        {
-            "id": 2,
-            "title": "Green Meadows Villa",
-            "bedrooms": 4,
-            "bathrooms": 4,
-            "size": "2200 sqft",
-            "price": "₹ 1.2 - 1.59 Cr",
-            "tag": "Featured",
-            "images": [
-                "/2A.jpg",
-                "/2B.jpg",
-                "/2C.jpg"
-            ]
-        },
-        {
-            "id": 3,
-            "title": "Amrutha Platinum Towers",
-            "bedrooms": 3,
-            "bathrooms": 3,
-            "size": "1750 sqft",
-            "price": "₹ 1.1 - 1.18 Cr",
-            "tag": "Featured",
-            "images": [
-                "/3A.jpg",
-                "/3B.jpg",
-                "/3C.jpg"
-            ]
-            
-        },
-        {
-            "id": 4,
-            "title": "Sarang By Samudhara",
-            "bedrooms": 6,
-            "bathrooms": 7,
-            "size": "3500 sqft",
-            "price": "₹ 1.35 - 2.94 Cr",
-            "tag": "Featured",
-            "images": [
-                "/4A.jpg",
-                "/4B.jpg",
-                "/4C.jpg"
-            ]
-            
-        }
-    ],
-    "top": [
-        {
-            "id": 1,
-            "title": "Mahamaya Estates",
-            "bedrooms": 4,
-            "bathrooms": 3,
-            "size": "1900 sqft",
-            "price": "3,00,00,000",
-            "pere": "Mostly wood ahh...",
-            "images": [
-                "/vite.svg",
-                "/vite.svg",
-                "/vite.svg"
-            ],
-            "avatar": "/vite.svg"
-        },
-        {
-            "id": 2,
-            "title": "Royal Abode",
-            "bedrooms": 5,
-            "bathrooms": 5,
-            "size": "2100 sqft",
-            "price": "3,50,00,000",
-            "pere": "Luxurious feel with modern amenities...",
-            "images": [
-                "/vite.svg",
-                "/vite.svg",
-                "/vite.svg"
-            ],
-            "avatar": "/vite.svg"
-        },
-        {
-            "id": 3,
-            "title": "City View Apartment",
-            "bedrooms": 3,
-            "bathrooms": 2,
-            "size": "1500 sqft",
-            "price": "1,95,00,000",
-            "pere": "Stunning views and prime location...",
-            "images": [
-                "/vite.svg",
-                "/vite.svg",
-                "/vite.svg"
-            ],
-            "avatar": "/vite.svg"
-        },
-        {
-            "id": 4,
-            "title": "Elegant Mansion",
-            "bedrooms": 6,
-            "bathrooms": 8,
-            "size": "3000 sqft",
-            "price": "5,00,00,000",
-            "pere": "Spacious and tastefully designed...",
-            "images": [
-                "/vite.svg",
-                "/vite.svg",
-                "/vite.svg"
-            ],
-            "avatar": "/vite.svg"
-        }
-    ],
-    "latest": [
-        {
-            "id": 1,
-            "title": "Lol lmao house",
-            "bedrooms": 1,
-            "bathrooms": 2,
-            "size": "1900 sqft",
-            "price": "3,00,00,000",
-            "pere": "Mostly wood ahh...",
-            "images": [
-                "/vite.svg",
-                "/vite.svg",
-                "/vite.svg"
-            ],
-            "avatar": "/vite.svg"
-        },
-        {
-            "id": 2,
-            "title": "Cozy Cottage",
-            "bedrooms": 2,
-            "bathrooms": 2,
-            "size": "1200 sqft",
-            "price": "95,00,000",
-            "pere": "Charming and perfect for a small family...",
-            "images": [
-                "/vite.svg",
-                "/vite.svg",
-                "/vite.svg"
-            ],
-            "avatar": "/vite.svg"
-        },
-        {
-            "id": 3,
-            "title": "Modern Loft",
-            "bedrooms": 1,
-            "bathrooms": 1,
-            "size": "800 sqft",
-            "price": "80,00,000",
-            "pere": "Sleek design with an open layout...",
-            "images": [
-                "/vite.svg",
-                "/vite.svg",
-                "/vite.svg"
-            ],
-            "avatar": "/vite.svg"
-        },
-        {
-            "id": 4,
-            "title": "Family Home",
-            "bedrooms": 4,
-            "bathrooms": 3,
-            "size": "1850 sqft",
-            "price": "2,10,00,000",
-            "pere": "Spacious living in a quiet neighborhood...",
-            "images": [
-                "/vite.svg",
-                "/vite.svg",
-                "/vite.svg"
-            ],
-            "avatar": "/vite.svg"
-        }
-    ]
+  "spotlight": [
+    {
+      "id": 1,
+      "title": "RT Premier 1",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "size": "1600 sqft",
+      "price": "₹ 89.67 Lacs - 1.47 Cr",
+      "tag": "Featured",
+      "images": ["/1A.jpg", "/1B.jpg", "/1C.jpg"]
+    },
+    {
+      "id": 2,
+      "title": "Green Meadows Villa",
+      "bedrooms": 4,
+      "bathrooms": 4,
+      "size": "2200 sqft",
+      "price": "₹ 1.2 - 1.59 Cr",
+      "tag": "Featured",
+      "images": ["/2A.jpg", "/2B.jpg", "/2C.jpg"]
+    },
+    {
+      "id": 3,
+      "title": "Amrutha Platinum Towers",
+      "bedrooms": 3,
+      "bathrooms": 3,
+      "size": "1750 sqft",
+      "price": "₹ 1.1 - 1.18 Cr",
+      "tag": "Featured",
+      "images": ["/3A.jpg", "/3B.jpg", "/3C.jpg"]
+    },
+    {
+      "id": 4,
+      "title": "Sarang By Samudhara",
+      "bedrooms": 6,
+      "bathrooms": 7,
+      "size": "3500 sqft",
+      "price": "₹ 1.35 - 2.94 Cr",
+      "tag": "Featured",
+      "images": ["/4A.jpg", "/4B.jpg", "/4C.jpg"]
+    },
+    {
+      "id": 5,
+      "title": "Skyscraper Astha",
+      "bedrooms": 6,
+      "bathrooms": 7,
+      "size": "1700 sqft",
+      "price": "₹ 1.05cr - 1.62Cr",
+      "tag": "Featured",
+      "images": ["/sky.jpg", "/sky2.jpg", "/sky3.jpg"]
+    }
+  ]
 }
-
-

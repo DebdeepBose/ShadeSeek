@@ -32,8 +32,7 @@ export const Section3Main = () => {
   return (
     <div className="h-full w-full bg-black pt-4 flex justify-center">
       <div className="service px-[4%] lg:px-[12%] py-8 sm:py-12 lg:py-20 w-full">
-        
-        {/* Title */}
+
         <div className="service-title section-title mb-8 sm:mb-10 text-center lg:text-left">
           <h4 className="text-3xl sm:text-4xl lg:text-5xl text-white font-bold pb-1 select-none">
             Our <span className=" text-transparent bg-clip-text brightness-125 bg-gradient-to-r from-sky-500 to-pink-400">Service</span>
@@ -43,7 +42,6 @@ export const Section3Main = () => {
           </p>
         </div>
 
-        {/* Grid */}
         <div className="service-wrapper grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 select-none">
           {services.map((service, idx) => (
             <Sec3Card

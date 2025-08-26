@@ -1,12 +1,13 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const VAButton = () => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
     <div className="flex justify-center items-center hover:scale-105 transition-all ease-in-out duration-300 active:scale-95 ">
-      <a
-        href=""
+      <Link
+        to="/ChooseService"
         className="
           line-height-1
           no-underline
@@ -81,7 +82,7 @@ const VAButton = () => {
           </svg>
         </span>
         View All
-      </a>
+      </Link>
     </div>
   );
 };

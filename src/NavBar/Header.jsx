@@ -13,8 +13,11 @@ export const Header = ({
       id="header"
       className="top-0 fixed z-50 w-full max-w-[1600px] px-4 flex items-center justify-between pl-4 pr-8 bg-black bg-opacity-0"
     >
-      {/* Logo */}
-      <div className="text-white flex justify-end text-2xl mt-3 font-bold ml-2 cursor-pointer">
+
+      <div className="text-white flex justify-end text-2xl mt-3 font-bold ml-2 cursor-pointer"  onClick={() =>
+                    window.scrollTo({ top: 0, behavior: "smooth" })
+                  }>
+        
         <span className="translate-y-[-1px] transition-all duration-300">
           Shade
         </span>
@@ -23,17 +26,17 @@ export const Header = ({
         </span>
       </div>
 
-      {/* Nav OR Burger */}
       {isMobile ? (
         <Loader isOpen={isPanelOpen} onClick={onBurgerClick} />
       ) : (
         <Nav />
       )}
 
-      {/* Explore (desktop only) */}
       {!isMobile && (
-        <div>
-          <Explore onExploreClick={onExploreClick} />
+        <div  onClick={() =>
+                    window.scrollTo({ top: 1400, behavior: "smooth" })
+                  }>
+          <Explore onExploreClick={onExploreClick}  />
         </div>
       )}
     </div>

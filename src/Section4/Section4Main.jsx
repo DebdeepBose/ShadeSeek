@@ -10,7 +10,7 @@ import { PropertyCard } from "./PropertyCard";
 
 export function Section4Main() {
   return (
-    <div className="h-[100vh] w-full bg-black pt-4 flex justify-center">
+    <div className="h-[100vh] w-full bg-black flex justify-center">
       <div className="spotlight-properties px-[2%] lg:px-[12%] py-[50px] w-full max-w-[1600px]">
         <div className="section-title mb-10 text-white text-center lg:text-left">
           <h4 className="text-5xl font-bold pb-1 text-white">
@@ -29,7 +29,7 @@ export function Section4Main() {
             spaceBetween={20}
             loop={true}
             autoplay={{
-              delay: 2500,
+              delay: 2200,
               disableOnInteraction: false,
               pauseOnMouseEnter: false,
             }}

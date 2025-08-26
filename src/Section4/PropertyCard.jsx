@@ -6,14 +6,14 @@ import { FaBed, FaBath, FaExpandArrowsAlt } from "react-icons/fa";
 export function PropertyCard({ property }) {
   return (
     <div
-      className=" mt-6 hover:-translate-y-3 rounded-2xl w-[95%] shadow-lg hover:shadow-xl transition-all duration-300 mb-10 overflow-hidden"
+      className=" mt-6 select-none hover:-translate-y-3 rounded-2xl w-[95%] shadow-lg hover:shadow-xl transition-all duration-300 mb-10 overflow-hidden"
       style={{
         backgroundColor: "#141428",
         background: "linear-gradient(135deg, #0099ff, #ff0099)",
         boxShadow: "0 4px 15px rgba(0, 0, 0, 1)",
       }}
     >
-      <a href={`/PropertiesDetails/${property.id}`} className="block">
+      
         <Swiper
           modules={[Pagination]}
           pagination={{ clickable: true }}
@@ -54,7 +54,7 @@ export function PropertyCard({ property }) {
             
           </div>
         </div>
-      </a>
+
     </div>
   );
 }
