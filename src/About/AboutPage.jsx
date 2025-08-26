@@ -55,8 +55,8 @@ export const AboutPage = () => {
           <div className="absolute top-1/2 right-64 -translate-y-1/2 animate-pulse md:-translate-y-[210px] h-[300px] w-[300px] lg:h-[500px] lg:w-[500px] bg-pink-600 rounded-full blur-3xl opacity-60 mix-blend-screen"></div>
         </div>
 
-        <div className="relative z-10 p-6 text-center select-none fade-slide">
-          <h1 className="text-5xl md:text-7xl font-extrabold mb-4 text-white">
+        <div className="relative z-10 p-6 text-center select-none ">
+          <h1 className="text-5xl md:text-7xl font-extrabold mb-4 text-white fade-slide">
             About <span className="text-blue-500">Us</span>
           </h1>
           <h2 className="font-bold text-xl md:text-3xl text-transparent bg-clip-text bg-gradient-to-r from-sky-500 to-pink-400 brightness-125">
