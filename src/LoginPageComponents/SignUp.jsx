@@ -1,24 +1,22 @@
-import { FaGoogle, FaApple, FaTwitter } from "react-icons/fa";
-import { Link, useNavigate } from "react-router-dom";
-import "./LoginButton.css";
-import "./FloatingLabel.css";
-import { auth } from "../config/firebase";
-import { signInWithEmailAndPassword } from "firebase/auth";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { auth } from "../config/firebase";
+import { createUserWithEmailAndPassword } from "firebase/auth";
+import "./LoginButton.css"; 
+import "./FloatingLabel.css";
+import { Link } from "react-router-dom";
 
-const LoginForm = () => {
+const SignupForm = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
-  const [showAutofill, setShowAutofill] = useState(false);
   const navigate = useNavigate();
 
-  const handleLogin = async (e) => {
+  const handleSignup = async (e) => {
     e.preventDefault();
     setError("");
     try {
-      await signInWithEmailAndPassword(auth, email, password);
-      setShowAutofill(false); // reset after successful login
+      await createUserWithEmailAndPassword(auth, email, password);
       navigate("/home");
     } catch (err) {
       setError(err.message);
@@ -29,18 +27,16 @@ const LoginForm = () => {
     <section className="w-screen h-screen flex items-center justify-center bg-black/85">
       <div className="relative w-[400px] p-10 bg-black/90 rounded-lg shadow-[0_15px_25px_rgba(0,0,0,0.6)]">
         <p className="login-gradient mb-8 text-center text-xl font-bold tracking-wide">
-          Login
+          Sign Up
         </p>
 
-        <form className="space-y-6" onSubmit={handleLogin}>
+        <form className="space-y-6" onSubmit={handleSignup}>
           <div className="user-box">
             <input
               type="text"
               required
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              onFocus={() => setShowAutofill(true)}
-              className={showAutofill ? "show-autofill" : ""}
             />
             <label>Email</label>
           </div>
@@ -51,8 +47,6 @@ const LoginForm = () => {
               required
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              onFocus={() => setShowAutofill(true)}
-              className={showAutofill ? "show-autofill" : ""}
             />
             <label>Password</label>
           </div>
@@ -67,29 +61,17 @@ const LoginForm = () => {
             <span></span>
             <span></span>
             <span></span>
-            Log In
+            Sign Up
           </button>
         </form>
 
-        <div className="my-3 flex items-center">
-         
-        </div>
-
-        
-
-        <Link to="/home">
-          <button className="w-full border border-zinc-600 hover:bg-zinc-800 py-3 rounded-xl font-medium transition text-white">
-            Continue as Guest
-          </button>
-        </Link>
-
         <p className="text-gray-400 text-sm mt-6 text-center">
-          Don't have an account?{" "}
+          Already have an account?{" "}
           <Link
-            to="/signup"
+            to="/"
             className="text-white hover:text-pink-500 transition-colors"
           >
-            Sign up!
+            Log in
           </Link>
         </p>
       </div>
@@ -97,4 +79,4 @@ const LoginForm = () => {
   );
 };
 
-export default LoginForm;
+export default SignupForm;

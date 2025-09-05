@@ -14,13 +14,17 @@ import { FarmHouse } from "./PropertyServices/FarmHouse";
 import { PropertyDetails } from "./PropertyServices/PropertyDetails";
 import { ContactPage } from "./Contact/ContactMain";
 import LoginForm from "./LoginPageComponents/LoginForm";
+import SignupForm from "./LoginPageComponents/SignUp";
 
 function App() {
   return (
     <>
       <ScrollToTop />
       <Routes>
+ 
         <Route path="/" element={<LoginForm />} />
+        <Route path="/signup" element={<SignupForm />} />
+
         <Route element={<Layout />}>
           <Route path="/home" element={<HomePage />} />
           <Route path="/AboutPage" element={<AboutPage />} />
@@ -35,7 +39,6 @@ function App() {
           <Route path="/property/:id" element={<PropertyDetails />} />
           <Route path="/ContactPage" element={<ContactPage />} />
         </Route>
-
       </Routes>
     </>
   );

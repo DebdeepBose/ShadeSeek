@@ -12,7 +12,7 @@ const Tooltip = () => {
 
         <li style={{ "--i": 0 }} className="circle-box">
           <a
-            href="https://www.linkedin.com/"
+            href="https://www.linkedin.com/in/debdeep-bose-0a8a47303"
             target="_blank"
             rel="noreferrer"
             className="anchor"
@@ -23,7 +23,7 @@ const Tooltip = () => {
 
         <li style={{ "--i": 1 }} className="circle-box">
           <a
-            href="https://github.com/"
+            href="https://github.com/DebdeepBose"
             target="_blank"
             rel="noreferrer"
             className="anchor"
@@ -33,7 +33,7 @@ const Tooltip = () => {
         </li>
         <li style={{ "--i": 2 }} className="circle-box">
           <a
-            href="https://leetcode.com/"
+            href="https://leetcode.com/u/DebdeepB03/"
             target="_blank"
             rel="noreferrer"
             className="anchor"
@@ -52,7 +52,7 @@ const Tooltip = () => {
         </li>
         <li style={{ "--i": 3 }} className="circle-box">
           <a
-            href="https://github.com/"
+            href="https://www.geeksforgeeks.org/user/debdeepbose03/"
             target="_blank"
             rel="noreferrer"
             className="anchor"
